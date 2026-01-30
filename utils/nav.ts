@@ -1,4 +1,4 @@
-const nav = [
+export const nav = [
   {
     url: "/",
     label: "Home",

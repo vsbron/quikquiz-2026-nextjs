@@ -1,8 +1,7 @@
-import { APP_NAME } from "@/utils/constants";
-
+import Hero from "@/components/Hero";
 function Homepage() {
   // Returned JSX
-  return <h1 className="text-4xl font-black">{APP_NAME}</h1>;
+  return <Hero />;
 }
 
 export default Homepage;
