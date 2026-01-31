@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 
 import { APP_NAME } from "@/utils/constants";
 import "./globals.css";
+import Wrapper from "@/components/Wrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,14 +31,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex-center min-h-screen bg-orange-200/60`}
       >
-        <div className="w-full min-h-screen flex place-items-center">
-          <div className="max-w-300 w-full mx-auto rounded-md border border-stone-300 shadow-sm">
-            <Header />
-            <div className="p-6 min-h-80">{children}</div>
+        <div className="max-w-300 w-full">
+          <Header />
+          <Wrapper>
+            <div className="p-6 h-[65dvh]">{children}</div>
             <Footer />
-          </div>
+          </Wrapper>
         </div>
       </body>
     </html>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Button from "./ui/Button";
 
 function Hero() {
   // Returned JSX
@@ -19,12 +20,21 @@ function Hero() {
         into a random quiz!
       </p>
       <div className="flex gap-8 mt-5">
-        <button>
-          <Link href="/categories">Categories</Link>
-        </button>
-        <button>
-          <Link href="/quiz/random">Random quiz</Link>
-        </button>
+        <Button asChild>
+          <Link href="/how-to-play" className="block px-4 py-2">
+            How To Play
+          </Link>
+        </Button>
+        <Button asChild>
+          <Link href="/categories" className="block px-4 py-2">
+            Categories
+          </Link>
+        </Button>
+        <Button asChild>
+          <Link href="/quiz/random" className="block px-4 py-2">
+            Random quiz
+          </Link>
+        </Button>
       </div>
     </section>
   );

@@ -1,11 +1,12 @@
-import Nav from "./Nav";
+import EmptyTabs from "./EmptyTabs";
+import LogoTab from "./LogoTab";
 
 function Header() {
   // Returned JSX
   return (
-    <header className="px-6 py-3 border-b border-stone-300 flex justify-between">
-      <div>QuikQuiz logo</div>
-      <Nav />
+    <header className="flex justify-between items-end px-5">
+      <LogoTab />
+      <EmptyTabs />
     </header>
   );
 }

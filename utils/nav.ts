@@ -12,7 +12,7 @@ export const nav = [
     label: "Quiz Categories",
   },
   {
-    url: "/app-info",
-    label: "App Info",
+    url: "/quiz/random",
+    label: "Random Quiz",
   },
 ];
