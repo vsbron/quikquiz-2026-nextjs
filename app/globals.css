@@ -2,7 +2,7 @@
 
 body {
   color: var(--color-chocolate);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter, serif;
 }
 ::selection {
   background-color: var(--color-chocolate);

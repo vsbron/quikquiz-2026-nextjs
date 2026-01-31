@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cherry_Swash, Lora, Inter } from "next/font/google";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -8,16 +8,20 @@ import Wrapper from "@/components/Wrapper";
 import { APP_NAME } from "@/utils/constants";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const cherrySwash = Cherry_Swash({
+  variable: "--font-cherry-swash",
+  weight: ["400"],
+});
+const lora = Lora({
+  variable: "--font-lora",
+  weight: ["400", "700"],
+});
+const inter = Inter({
+  variable: "--font-inter",
+  weight: ["400", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
+// Meta data
 export const metadata: Metadata = {
   title: APP_NAME,
   description: `Test your knowledge with ${APP_NAME} - a fun, interactive quiz app built with Next.js. Choose a category, answer questions, and see your results instantly.`,
@@ -31,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex-center min-h-screen bg-orange-200/60`}
+        className={`${cherrySwash.variable} ${lora.variable} ${inter.variable} antialiased flex-center min-h-screen bg-orange-200/60`}
       >
         <div className="max-w-300 w-full">
           <Header />
