@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* Base */
 body {
   color: var(--color-chocolate);
   font-family: Inter, serif;
@@ -8,12 +9,22 @@ body {
   background-color: var(--color-chocolate);
   color: var(--color-white);
 }
-/* f */
 @theme {
   --color-chocolate: rgba(101, 67, 33);
   --color-background: #fffefd;
+  --font-cherry-swash: var(--font-cherry-swash);
+  --font-lora: var(--font-lora);
 }
 
+/* Fonts */
+.font-cherry {
+  font-family: var(--font-cherry-swash);
+}
+.font-lora {
+  font-family: var(--font-lora);
+}
+
+/* Custom classes */
 .flex-center {
   @apply flex items-center justify-center;
 }

@@ -1,6 +1,6 @@
 function HowToPlayPage() {
   // Returned JSX
-  return <div>HowToPlayPage</div>;
+  return <h1 className="font-cherry text-4xl font-black">How to play</h1>;
 }
 
 export default HowToPlayPage;
