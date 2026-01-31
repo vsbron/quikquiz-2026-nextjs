@@ -1,11 +1,12 @@
 import Link from "next/link";
-import Button from "./ui/Button";
 
-function Hero() {
+import Button from "@/components/ui/Button";
+
+function HeroSection() {
   // Returned JSX
   return (
     <section className="flex flex-col items-center gap-3 my-8">
-      <div>Big QuikQuiz logo</div>
+      <div className="text-6xl font-black">QxQ</div>
       <h1>QuikQuiz</h1>
       <p>
         Welcome to a place where you can test your knowledge by taking fun,
@@ -26,7 +27,7 @@ function Hero() {
           </Link>
         </Button>
         <Button asChild>
-          <Link href="/categories" className="block px-4 py-2">
+          <Link href="/quiz" className="block px-4 py-2">
             Categories
           </Link>
         </Button>
@@ -40,4 +41,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default HeroSection;

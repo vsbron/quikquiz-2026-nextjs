@@ -1,7 +1,8 @@
-import Hero from "@/components/Hero";
+import HeroSection from "@/components/Hero";
+
 function Homepage() {
   // Returned JSX
-  return <Hero />;
+  return <HeroSection />;
 }
 
 export default Homepage;

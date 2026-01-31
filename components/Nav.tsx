@@ -5,7 +5,7 @@ import { nav } from "@/utils/nav";
 function Nav() {
   // Returned JSX
   return (
-    <nav className="flex gap-8">
+    <nav className="flex gap-4">
       {nav.map(({ url, label }) => (
         <Link href={url} key={url}>
           {label}

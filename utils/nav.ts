@@ -9,7 +9,7 @@ export const nav = [
   },
   {
     url: "/quiz",
-    label: "Quiz Categories",
+    label: "Categories",
   },
   {
     url: "/quiz/random",
