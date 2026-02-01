@@ -10,7 +10,7 @@ function EmptyTabs() {
   const pathname = usePathname();
 
   // Set the class for inactive tab
-  const inactiveClass = "bg-[linear-gradient(to_bottom,#FFFAF0_50%,#FFEDD5)]";
+  const inactiveClass = "bg-[linear-gradient(to_bottom,#f9f9f9_40%,#ffdaaf)]";
 
   // Returned JSX
   return (

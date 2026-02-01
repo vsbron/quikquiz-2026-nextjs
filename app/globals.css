@@ -3,7 +3,9 @@
 /* Base */
 body {
   color: var(--color-chocolate);
-  font-family: Inter, serif;
+  font:
+    400 18px/1.4 Inter,
+    serif;
 }
 ::selection {
   background-color: var(--color-chocolate);
@@ -11,7 +13,8 @@ body {
 }
 @theme {
   --color-chocolate: rgba(101, 67, 33);
-  --color-background: #fffefd;
+  --color-background: #f9f9f9;
+  --color-accent: oklch(55.3% 0.195 38.402);
   --font-cherry-swash: var(--font-cherry-swash);
   --font-lora: var(--font-lora);
 }

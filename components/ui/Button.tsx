@@ -12,9 +12,11 @@ function Button({ children, asChild, className }: ButtonProps) {
   // Returned JSX
   return (
     <button
-      className={`border rounded-md cursor-pointer ${asChild ? "" : "px-4 py-2"} ${className}`}
+      className={`text-[27px] font-cherry-swash bg-accent rounded-lg cursor-pointer group ${asChild ? "" : "px-5 py-4"} ${className}`}
     >
-      {children}
+      <span className="block py-2 px-8 rounded-lg bg-orange-50 border border-chocolate/30 -translate-y-2 group-active:-translate-y-0.5 transition-transform">
+        {children}
+      </span>
     </button>
   );
 }

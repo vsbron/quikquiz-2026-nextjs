@@ -20,7 +20,7 @@ function HeroSection() {
         Start by learning the rules, explore quiz categories, or jump straight
         into a random quiz!
       </p>
-      <div className="flex gap-8 mt-5">
+      <div className="flex gap-8 mt-10">
         <Button asChild>
           <Link href="/how-to-play" className="block px-4 py-2">
             How To Play
