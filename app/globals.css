@@ -9,6 +9,12 @@ body {
   background: url("/bg.png") no-repeat center center;
   background-size: 110% auto;
 }
+@media screen and (min-width: 1921px) {
+  body {
+    background-size: cover;
+  }
+}
+
 ::selection {
   background-color: var(--color-chocolate);
   color: var(--color-white);
@@ -55,8 +61,11 @@ ol {
 .flex-center {
   @apply flex items-center justify-center;
 }
+.flex-center--desk {
+  @apply sm:flex sm:items-center sm:justify-center;
+}
 .shadow-big {
-  @apply shadow-[15px_15px_0] shadow-chocolate/80;
+  @apply sm:shadow-[15px_15px_0] shadow-chocolate/80;
 }
 .wrapper {
   @apply bg-background rounded-lg;

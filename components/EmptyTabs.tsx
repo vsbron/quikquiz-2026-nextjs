@@ -14,7 +14,7 @@ function EmptyTabs() {
 
   // Returned JSX
   return (
-    <div className="flex gap-1">
+    <div className="flex gap-1 max-lg:hidden">
       {/* Tabs that correspond the nav */}
       {nav.slice(0, -1).map(({ url }) => {
         // Check if pathname fits the tab
