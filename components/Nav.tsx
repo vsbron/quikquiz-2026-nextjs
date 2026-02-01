@@ -7,7 +7,11 @@ function Nav() {
   return (
     <nav className="flex gap-4">
       {nav.map(({ url, label }) => (
-        <Link href={url} key={url}>
+        <Link
+          href={url}
+          key={url}
+          className="text-accent hover:text-accent/65 transition-colors"
+        >
           {label}
         </Link>
       ))}
