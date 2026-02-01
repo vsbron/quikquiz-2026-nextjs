@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cherry_Swash, Lora, Inter } from "next/font/google";
+import { Lora, Inter, Merriweather } from "next/font/google";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -8,8 +8,8 @@ import Wrapper from "@/components/Wrapper";
 import { APP_NAME } from "@/utils/constants";
 import "./globals.css";
 
-const cherrySwash = Cherry_Swash({
-  variable: "--font-cherry-swash",
+const merriweather = Merriweather({
+  variable: "--font-merriweather",
   weight: ["400"],
 });
 const lora = Lora({
@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${cherrySwash.variable} ${lora.variable} ${inter.variable} antialiased flex-center min-h-screen`}
+        className={`${merriweather.variable} ${lora.variable} ${inter.variable} antialiased flex-center min-h-screen`}
       >
         <div className="max-w-300 w-full">
           <Header />

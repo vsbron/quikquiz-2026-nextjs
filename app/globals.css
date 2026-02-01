@@ -6,13 +6,35 @@ body {
   font:
     400 18px/1.4 Inter,
     serif;
-  background: url("/1.png") no-repeat center center;
+  background: url("/bg.png") no-repeat center center;
   background-size: 110% auto;
 }
 ::selection {
   background-color: var(--color-chocolate);
   color: var(--color-white);
 }
+
+h1 {
+  font-family: var(--font-merriweather);
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+p {
+  margin: 10px 0 15px;
+}
+
+ol,
+ul {
+  margin: 20px 0;
+  padding-left: 30px;
+}
+ol {
+  list-style: decimal;
+}
+
 @theme {
   --color-chocolate: rgba(101, 67, 33);
   --color-background: #f9f9f9;
@@ -22,8 +44,8 @@ body {
 }
 
 /* Fonts */
-.font-cherry {
-  font-family: var(--font-cherry-swash);
+.font-merriweather {
+  font-family: var(--font-merriweather);
 }
 .font-lora {
   font-family: var(--font-lora);

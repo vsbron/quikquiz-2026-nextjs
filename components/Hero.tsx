@@ -5,7 +5,7 @@ import Button from "@/components/ui/Button";
 function HeroSection() {
   // Returned JSX
   return (
-    <section className="flex flex-col items-center gap-3 my-8">
+    <section className="flex flex-col items-center gap-1 my-8">
       <div className="text-6xl font-black">QxQ</div>
       <h1>QuikQuiz</h1>
       <p>
