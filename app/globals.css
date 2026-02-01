@@ -6,6 +6,10 @@ body {
   font:
     400 18px/1.4 Inter,
     serif;
+  padding: 0;
+  background: url("/1.png") no-repeat center center;
+  background-size: 110% auto;
+  padding: 0;
 }
 ::selection {
   background-color: var(--color-chocolate);

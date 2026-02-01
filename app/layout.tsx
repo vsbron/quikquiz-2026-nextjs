@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${cherrySwash.variable} ${lora.variable} ${inter.variable} antialiased flex-center min-h-screen bg-orange-200/90`}
+        className={`${cherrySwash.variable} ${lora.variable} ${inter.variable} antialiased flex-center min-h-screen`}
       >
         <div className="max-w-300 w-full">
           <Header />
