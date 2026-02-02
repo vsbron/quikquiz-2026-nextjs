@@ -1,4 +1,4 @@
-import HeroSection from "@/components/Hero";
+import HeroSection from "@/components/HeroSection";
 
 function Homepage() {
   // Returned JSX

@@ -1,5 +1,5 @@
-import EmptyTabs from "@/components/EmptyTabs";
-import LogoTab from "@/components/LogoTab";
+import EmptyTabs from "@/components/ui/EmptyTabs";
+import LogoTab from "@/components/ui/LogoTab";
 
 function Header() {
   // Returned JSX

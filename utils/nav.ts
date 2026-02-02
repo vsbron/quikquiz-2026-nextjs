@@ -1,18 +1,20 @@
+import { LINKS } from "./constants";
+
 export const nav = [
   {
-    url: "/",
+    url: LINKS.HOME,
     label: "Home",
   },
   {
-    url: "/how-to-play",
+    url: LINKS.HOW_TO_PLAY,
     label: "How To Play",
   },
   {
-    url: "/quiz",
+    url: LINKS.CATEGORIES,
     label: "Categories",
   },
   {
-    url: "/quiz/random",
+    url: LINKS.RANDOM_QUIZ,
     label: "Random Quiz",
   },
 ];
