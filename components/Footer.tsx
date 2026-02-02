@@ -3,7 +3,7 @@ import Nav from "@/components/Nav";
 function Footer() {
   // Returned JSX
   return (
-    <footer className="px-8 py-4 border-t border-stone-300 flex justify-between text-[16px] items-center flex-col md:flex-row mt-auto">
+    <footer className="px-12 py-4 border-t border-stone-300 flex justify-between text-[16px] items-center flex-col md:flex-row mt-auto">
       <div className="flex flex-col gap-0.5 max-md:items-center">
         <div className="max-sm:hidden">
           <Nav />

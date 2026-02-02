@@ -33,11 +33,6 @@ ol {
   list-style: decimal;
 }
 
-section {
-  max-width: 800px;
-  width: 100%;
-}
-
 section a {
   color: var(--color-accent);
 }

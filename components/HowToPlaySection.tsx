@@ -18,7 +18,8 @@ function HowToPlaySection() {
         <li>
           <b>Select difficulty</b>
           <br />
-          Each category has two difficulty levels - choose what suits you best.
+          Each category has three difficulty levels - choose what suits you
+          best.
         </li>
         <li>
           <b>Answer the questions</b>
