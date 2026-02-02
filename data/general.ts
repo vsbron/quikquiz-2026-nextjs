@@ -1,4 +1,4 @@
-export const generalQuestions = {
+export const generalQuestions: QuestionsPack = {
   slug: "general",
   title: "General Knowledge",
   difficulties: {

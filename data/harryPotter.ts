@@ -1,4 +1,4 @@
-export const harryPotterQuestions = {
+export const harryPotterQuestions: QuestionsPack = {
   slug: "harry-potter",
   title: "Harry Potter",
   difficulties: {

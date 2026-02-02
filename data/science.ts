@@ -1,0 +1,240 @@
+export const scienceQuestions: QuestionsPack = {
+  slug: "science",
+  title: "Science",
+  difficulties: {
+    casual: [
+      {
+        question: "What planet is known as the Red Planet?",
+        answers: ["Mars", "Venus", "Jupiter", "Mercury"],
+        correctAnswer: "Mars",
+      },
+      {
+        question: "What gas do humans need to breathe to survive?",
+        answers: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+        correctAnswer: "Oxygen",
+      },
+      {
+        question: "What is the chemical symbol for water?",
+        answers: ["H₂O", "O₂", "CO₂", "H₂"],
+        correctAnswer: "H₂O",
+      },
+      {
+        question: "Which organ pumps blood through the human body?",
+        answers: ["Heart", "Lungs", "Brain", "Liver"],
+        correctAnswer: "Heart",
+      },
+      {
+        question: "Which force pulls objects toward the Earth?",
+        answers: ["Gravity", "Magnetism", "Friction", "Inertia"],
+        correctAnswer: "Gravity",
+      },
+      {
+        question: "What part of the plant is responsible for photosynthesis?",
+        answers: ["Leaves", "Roots", "Stem", "Flowers"],
+        correctAnswer: "Leaves",
+      },
+      {
+        question: "Which object is shown in the image?",
+        image: "science_object_dna_helix.jpg", // double helix
+        answers: ["DNA", "Protein", "Cell membrane", "Chromosome"],
+        correctAnswer: "DNA",
+      },
+      {
+        question: "What state of matter is air?",
+        answers: ["Gas", "Liquid", "Solid", "Plasma"],
+        correctAnswer: "Gas",
+      },
+      {
+        question: "Which star is at the center of our solar system?",
+        answers: ["The Sun", "Alpha Centauri", "Sirius", "Polaris"],
+        correctAnswer: "The Sun",
+      },
+      {
+        question: "Which tool is shown in the image?",
+        image: "science_tool_microscope.jpg", // standard lab microscope
+        answers: ["Microscope", "Telescope", "Periscope", "Endoscope"],
+        correctAnswer: "Microscope",
+      },
+    ],
+    moderate: [
+      {
+        question: "What type of blood cells help fight infections?",
+        answers: [
+          "White blood cells",
+          "Red blood cells",
+          "Platelets",
+          "Plasma",
+        ],
+        correctAnswer: "White blood cells",
+      },
+      {
+        question: "What planet has the most moons?",
+        answers: ["Saturn", "Jupiter", "Uranus", "Neptune"],
+        correctAnswer: "Saturn",
+      },
+      {
+        question: "What does DNA stand for?",
+        answers: [
+          "Deoxyribonucleic Acid",
+          "Dynamic Nuclear Agent",
+          "Dual Nucleotide Axis",
+          "Deoxygenated Nitric Acid",
+        ],
+        correctAnswer: "Deoxyribonucleic Acid",
+      },
+      {
+        question:
+          "Which process allows plants to convert sunlight into energy?",
+        answers: [
+          "Photosynthesis",
+          "Respiration",
+          "Fermentation",
+          "Transpiration",
+        ],
+        correctAnswer: "Photosynthesis",
+      },
+      {
+        question: "Which scientist is shown in the image?",
+        image: "science_scientist_newton.jpg", // Isaac Newton portrait
+        answers: [
+          "Isaac Newton",
+          "Albert Einstein",
+          "Galileo Galilei",
+          "Nikola Tesla",
+        ],
+        correctAnswer: "Isaac Newton",
+      },
+      {
+        question: "What part of the cell contains genetic material?",
+        answers: ["Nucleus", "Mitochondria", "Ribosome", "Cell wall"],
+        correctAnswer: "Nucleus",
+      },
+      {
+        question: "Which unit is used to measure electric current?",
+        answers: ["Ampere", "Volt", "Watt", "Ohm"],
+        correctAnswer: "Ampere",
+      },
+      {
+        question: "What type of eclipse occurs when the Moon blocks the Sun?",
+        answers: [
+          "Solar eclipse",
+          "Lunar eclipse",
+          "Partial eclipse",
+          "Annular eclipse",
+        ],
+        correctAnswer: "Solar eclipse",
+      },
+      {
+        question: "Which diagram is shown in the image?",
+        image: "science_diagram_water_cycle.jpg", // evaporation/condensation diagram
+        answers: [
+          "Water cycle",
+          "Carbon cycle",
+          "Nitrogen cycle",
+          "Rock cycle",
+        ],
+        correctAnswer: "Water cycle",
+      },
+      {
+        question: "What is the main function of mitochondria?",
+        answers: [
+          "Produce energy",
+          "Store water",
+          "Create proteins",
+          "Protect the cell",
+        ],
+        correctAnswer: "Produce energy",
+      },
+    ],
+    pro: [
+      {
+        question: "What theory explains the origin of the universe?",
+        answers: [
+          "Big Bang Theory",
+          "Theory of Relativity",
+          "String Theory",
+          "Steady State Theory",
+        ],
+        correctAnswer: "Big Bang Theory",
+      },
+      {
+        question: "Which subatomic particle has a negative electric charge?",
+        answers: ["Electron", "Proton", "Neutron", "Positron"],
+        correctAnswer: "Electron",
+      },
+      {
+        question: "What does the pH scale measure?",
+        answers: [
+          "Acidity and alkalinity",
+          "Temperature",
+          "Electrical conductivity",
+          "Density",
+        ],
+        correctAnswer: "Acidity and alkalinity",
+      },
+      {
+        question: "Which scientist proposed the theory of natural selection?",
+        answers: [
+          "Charles Darwin",
+          "Gregor Mendel",
+          "Louis Pasteur",
+          "James Watson",
+        ],
+        correctAnswer: "Charles Darwin",
+      },
+      {
+        question: "Which phenomenon is shown in the image?",
+        image: "science_phenomenon_double_slit.jpg", // wave interference pattern
+        answers: [
+          "Wave-particle duality",
+          "Quantum entanglement",
+          "Photoelectric effect",
+          "Relativity",
+        ],
+        correctAnswer: "Wave-particle duality",
+      },
+      {
+        question: "Which gas is most abundant in Earth's atmosphere?",
+        answers: ["Nitrogen", "Oxygen", "Carbon Dioxide", "Argon"],
+        correctAnswer: "Nitrogen",
+      },
+      {
+        question: "What is the primary function of enzymes in the body?",
+        answers: [
+          "Speed up chemical reactions",
+          "Store energy",
+          "Carry oxygen",
+          "Transmit signals",
+        ],
+        correctAnswer: "Speed up chemical reactions",
+      },
+      {
+        question: "Which scale is used to measure earthquake magnitude?",
+        answers: [
+          "Richter scale",
+          "Fujita scale",
+          "Beaufort scale",
+          "Kelvin scale",
+        ],
+        correctAnswer: "Richter scale",
+      },
+      {
+        question: "Which structure is shown in the image?",
+        image: "science_structure_cell_membrane.jpg", // membrane diagram
+        answers: ["Cell membrane", "Cell wall", "Nucleus", "Mitochondria"],
+        correctAnswer: "Cell membrane",
+      },
+      {
+        question:
+          "Which law states that energy cannot be created or destroyed?",
+        answers: [
+          "Law of Conservation of Energy",
+          "Newton's First Law",
+          "Second Law of Thermodynamics",
+          "Ohm's Law",
+        ],
+        correctAnswer: "Law of Conservation of Energy",
+      },
+    ],
+  },
+};
