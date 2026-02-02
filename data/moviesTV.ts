@@ -1,6 +1,8 @@
 export const moviesTvQuestions: QuestionsPack = {
   slug: "movies-tv",
   title: "Movies & TV",
+  description:
+    "From classics to modern hits, test your knowledge of film, series, and iconic pop culture moments.",
   difficulties: {
     casual: [
       {

@@ -1,6 +1,8 @@
 export const logicFactsQuestions: QuestionsPack = {
   slug: "logic-facts",
   title: "Logic & Facts",
+  description:
+    "Mind-bending riddles, brain teasers, and surprising facts to stretch your reasoning skills",
   difficulties: {
     casual: [
       {

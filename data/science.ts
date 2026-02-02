@@ -1,6 +1,8 @@
 export const scienceQuestions: QuestionsPack = {
   slug: "science",
   title: "Science",
+  description:
+    "Physics, chemistry, biology, and discoveries that shaped our understanding of the world",
   difficulties: {
     casual: [
       {

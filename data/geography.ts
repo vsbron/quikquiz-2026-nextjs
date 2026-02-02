@@ -1,6 +1,8 @@
 export const geographyQuestions: QuestionsPack = {
   slug: "geography",
   title: "Geography",
+  description:
+    "Countries, capitals, landmarks, and natural wonders from across the globe. Can you pinpoint them all",
   difficulties: {
     casual: [
       {

@@ -1,6 +1,8 @@
 export const harryPotterQuestions: QuestionsPack = {
   slug: "harry-potter",
   title: "Harry Potter",
+  description:
+    "Dive into the magical world of Hogwarts, spells, characters, and adventures. Test your wizarding knowledge!",
   difficulties: {
     casual: [
       {

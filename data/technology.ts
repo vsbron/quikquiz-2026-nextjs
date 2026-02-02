@@ -1,6 +1,8 @@
 export const technologyQuestions: QuestionsPack = {
   slug: "technology",
   title: "Technology",
+  description:
+    "From gadgets to innovations, explore the digital world and test your tech-savviness",
   difficulties: {
     casual: [
       {

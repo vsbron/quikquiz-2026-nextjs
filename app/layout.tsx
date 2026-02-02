@@ -35,12 +35,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${merriweather.variable} ${lora.variable} ${inter.variable} flex-center--desk antialiased min-h-screen`}
+        className={`${merriweather.variable} ${lora.variable} ${inter.variable} antialiased max-sm:min-h-screen`}
       >
-        <div className="w-full sm:max-w-150 md:max-w-180 lg:max-w-240 xl:max-w-300 max-sm:min-h-screen">
+        <div className="w-full sm:w-150 md:w-180 lg:w-240 xl:w-300 mx-auto sm:mt-10 sm:mb-10 lg:mt-20">
           <Header />
           <Wrapper>
-            <div className="p-6 sm:h-[65dvh] sm:max-h-150 flex-center flex-col max-sm:mb-auto">
+            <div className="pt-12 pb-16 px-6 sm:min-h-[65dvh] flex-center flex-col">
               {children}
             </div>
             <Footer />

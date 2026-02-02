@@ -1,6 +1,8 @@
+import CategoriesSection from "@/components/CategoriesSection";
+
 function QuizPage() {
   // Returned JSX
-  return <h1 className="font-cherry text-4xl font-black">Quiz Categories</h1>;
+  return <CategoriesSection />;
 }
 
 export default QuizPage;

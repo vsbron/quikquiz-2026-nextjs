@@ -1,6 +1,8 @@
 export const generalQuestions: QuestionsPack = {
   slug: "general",
   title: "General Knowledge",
+  description:
+    "Everyday knowledge and trivia to challenge your brain, covering facts, fun info, and questions that make you think.",
   difficulties: {
     casual: [
       {

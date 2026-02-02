@@ -1,6 +1,8 @@
 export const marvelQuestions: QuestionsPack = {
   slug: "marvel",
   title: "Marvel",
+  description:
+    "From heroes to villains, comics to movies, prove how well you know the Marvel Universe.",
   difficulties: {
     casual: [
       {

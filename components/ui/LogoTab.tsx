@@ -13,7 +13,7 @@ function LogoTab() {
         href={LINKS.HOME}
       >
         <span className="font-black text-3xl">QxQ</span>
-        <span className="font-cherry-swash">QuikQuiz</span>
+        <span className="font-merriweather">QuikQuiz</span>
       </Link>
     </Tab>
   );

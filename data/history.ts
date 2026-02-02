@@ -1,6 +1,8 @@
 export const historyQuestions: QuestionsPack = {
   slug: "history",
   title: "History",
+  description:
+    "Ancient civilizations to modern events, challenging your knowledge of the past and its impact on today",
   difficulties: {
     casual: [
       {

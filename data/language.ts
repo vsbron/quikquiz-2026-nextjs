@@ -1,6 +1,8 @@
 export const languageQuestions: QuestionsPack = {
   slug: "language-words",
   title: "Language & Words",
+  description:
+    "Words, grammar, literature, and linguistics challenges for wordsmiths and language lovers",
   difficulties: {
     casual: [
       {

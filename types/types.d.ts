@@ -3,6 +3,7 @@ type Difficulty = "casual" | "moderate" | "pro";
 type QuestionsPack = {
   slug: string;
   title: string;
+  description: string;
   difficulties: Record<Difficulty, Question[]>;
 };
 
