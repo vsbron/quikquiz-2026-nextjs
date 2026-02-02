@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function QuestionsDisplay({ questions }: { questions: Question[] }) {
   // Returned JSX
   return (
@@ -5,6 +7,9 @@ function QuestionsDisplay({ questions }: { questions: Question[] }) {
       {questions.map(({ question, answers, image }) => (
         <div key={question}>
           <h2 className="mb-5">{question}</h2>
+          {/* {image && (
+            <Image src={image} width={400} height={250} alt={question} />
+          )} */}
           <div className="grid grid-cols-2 gap-4">
             {answers.map((answer) => (
               <div key={answer}>{answer}</div>

@@ -1,5 +1,4 @@
 import QuizSection from "@/components/QuizSection";
-import SectionTitle from "@/components/ui/SectionTitle";
 
 // Props interface
 interface QuestionsPageProps {
