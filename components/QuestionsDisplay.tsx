@@ -66,16 +66,16 @@ function QuestionsDisplay({ questions, difficulty }: QuestionsDisplayProps) {
                 i === currentIndex ? "opacity-100" : "opacity-0"
               }`}
             >
-              <div className="bg-white rounded-xl max-sm:min-h-70 sm:h-68 flex-center shadow-md shadow-chocolate/50 pt-3 pb-5 px-4 sm:px-8 mb-8">
+              <div className="bg-white rounded-xl max-sm:min-h-70 sm:h-68 flex-center text-center shadow-md shadow-chocolate/50 pt-3 pb-5 px-4 sm:px-8 mb-8">
                 <div>
                   <h2 className="text-xl sm:text-2xl font-merriweather">
                     {question}
                   </h2>
                   {image && (
                     <Image
-                      src="/bg.png"
+                      src={image}
                       className="mt-2 mx-auto"
-                      width={300}
+                      width={480}
                       height={200}
                       alt={question}
                     />

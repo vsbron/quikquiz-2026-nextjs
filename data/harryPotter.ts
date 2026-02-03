@@ -32,7 +32,7 @@ export const harryPotterQuestions: QuestionsPack = {
       },
       {
         question: "Which creature is shown in the image?",
-        image: "hp_movie_creature_dementor.jpg", // Dementor close-up / on Hogwarts grounds
+        image: "/quiz/harry-potter/casual-q5.png",
         answers: ["Dementor", "Goblin", "Werewolf", "Thestral"],
         correctAnswer: "Dementor",
       },
@@ -64,7 +64,7 @@ export const harryPotterQuestions: QuestionsPack = {
       },
       {
         question: "Which location is shown in the image?",
-        image: "hp_movie_location_diagon_alley.jpg", // wide shot, shops + crowd
+        image: "/quiz/harry-potter/casual-q9.png",
         answers: [
           "Diagon Alley",
           "Hogsmeade",
@@ -75,7 +75,7 @@ export const harryPotterQuestions: QuestionsPack = {
       },
       {
         question: "Which symbol is shown in the image?",
-        image: "hp_movie_symbol_dark_mark.jpg", // skull with snake
+        image: "/quiz/harry-potter/casual-q10.png",
         answers: [
           "Dark Mark",
           "Deathly Hallows",
@@ -111,7 +111,7 @@ export const harryPotterQuestions: QuestionsPack = {
       },
       {
         question: "Which character is NOT shown in the image?",
-        image: "hp_movie_characters_golden_trio.jpg", // Harry + Ron + Hermione together
+        image: "/quiz/harry-potter/moderate-q3.png",
         answers: [
           "Harry Potter",
           "Hermione Granger",
@@ -167,7 +167,7 @@ export const harryPotterQuestions: QuestionsPack = {
       },
       {
         question: "Which person is shown in the image?",
-        image: "hp_movie_character_mad_eye_moody.jpg", // Moody with magical eye
+        image: "/quiz/harry-potter/moderate-q9.png",
         answers: [
           "Mad-Eye Moody",
           "Arthur Weasley",
@@ -212,7 +212,7 @@ export const harryPotterQuestions: QuestionsPack = {
       },
       {
         question: "Which character is shown in the image?",
-        image: "hp_book_character_peverell_brothers_art.jpg", // illustration-style depiction, 3 brothers
+        image: "/quiz/harry-potter/pro-q3.png",
         answers: [
           "The Peverell brothers",
           "The Marauders",
@@ -223,14 +223,14 @@ export const harryPotterQuestions: QuestionsPack = {
       },
       {
         question:
-          "In the books, what is the name of the wizarding hospital in London?",
+          "In the books, what charm does Hermione use to protect the list of Dumbledore's Army members?",
         answers: [
-          "St Mungo's Hospital for Magical Maladies and Injuries",
-          "St Brigid's Magical Infirmary",
-          "The Auror Medical Wing",
-          "The Ministry Healing Hall",
+          "Jinxed parchment",
+          "Protego Totalum",
+          "Hexed ink",
+          "Taboo spell",
         ],
-        correctAnswer: "St Mungo's Hospital for Magical Maladies and Injuries",
+        correctAnswer: "Jinxed parchment",
       },
       {
         question:
@@ -283,7 +283,7 @@ export const harryPotterQuestions: QuestionsPack = {
       },
       {
         question: "Which location is shown in the image?",
-        image: "hp_book_location_st_mungos_sign.jpg", // sign/exterior hinting St Mungo's (book-accurate)
+        image: "/quiz/harry-potter/pro-q10.png",
         answers: [
           "St Mungo's",
           "The Burrow",
