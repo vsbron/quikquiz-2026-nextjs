@@ -47,11 +47,11 @@ function QuestionsDisplay({ questions, difficulty }: QuestionsDisplayProps) {
   // Returned JSX
   return (
     <div className="relative w-full mx-auto">
-      <div className="flex justify-center gap-3 mb-1 text-base">
+      <div className="flex justify-center max-sm:flex-col max-sm:items-center sm:gap-3 mb-1 text-[15px] sm:text-base">
         <span>
           Question: {currentIndex + 1}/{questions.length}
         </span>
-        <span>|</span>
+        <span className="max-sm:hidden">|</span>
         <span className="capitalize">Difficulty: {difficulty}</span>
       </div>
       <div className="overflow-hidden -mx-3">
@@ -66,9 +66,11 @@ function QuestionsDisplay({ questions, difficulty }: QuestionsDisplayProps) {
                 i === currentIndex ? "opacity-100" : "opacity-0"
               }`}
             >
-              <div className="bg-white rounded-xl h-68 flex-center shadow-md shadow-chocolate/50 pt-3 pb-5 px-8 mb-8">
+              <div className="bg-white rounded-xl max-sm:min-h-70 sm:h-68 flex-center shadow-md shadow-chocolate/50 pt-3 pb-5 px-4 sm:px-8 mb-8">
                 <div>
-                  <h2 className="text-2xl font-lora">{question}</h2>
+                  <h2 className="text-xl sm:text-2xl font-merriweather">
+                    {question}
+                  </h2>
                   {image && (
                     <Image
                       src="/bg.png"
@@ -87,7 +89,6 @@ function QuestionsDisplay({ questions, difficulty }: QuestionsDisplayProps) {
                     key={answer}
                     small
                     onClick={() => submitAnswer(answer)}
-                    className="text-xl!"
                   >
                     {answer}
                   </Button>

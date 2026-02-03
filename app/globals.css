@@ -42,15 +42,11 @@ section a {
   --color-background: #f9f9f9;
   --color-accent: oklch(55.3% 0.195 38.402);
   --font-merriweather: var(--font-merriweather);
-  --font-lora: var(--font-lora);
 }
 
 /* Fonts */
 .font-merriweather {
   font-family: var(--font-merriweather);
-}
-.font-lora {
-  font-family: var(--font-lora);
 }
 
 /* Custom classes */

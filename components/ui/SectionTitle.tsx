@@ -9,7 +9,7 @@ function SectionTitle({ children, className = "" }: SectionTitleProps) {
   // Returned JSX
   return (
     <h1
-      className={`font-merriweather text-[40px] font-bold text-center mb-8 ${className}`}
+      className={`font-merriweather text-[26px] md:text-[40px] font-bold text-center mb-8 ${className}`}
     >
       {children}
     </h1>

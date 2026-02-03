@@ -11,16 +11,16 @@ function CategoriesSection() {
   return (
     <section>
       <SectionTitle>Choose a Category</SectionTitle>
-      <div className="grid grid-cols-2 gap-12 ">
+      <div className="grid sm:grid-cols-2 gap-12">
         {CATEGORIES.map(({ title, slug, description }) => (
           <div
             key={slug}
             className="grid grid-rows-[auto_1fr_auto] justify-items-start"
           >
-            <h2 className="text-2xl font-merriweather font-bold">
+            <h2 className="text-xl sm:text-2xl font-merriweather font-bold">
               <Link href={`${LINKS.CATEGORIES}/${slug}`}>{title}</Link>
             </h2>
-            <p className="text-[16px]">{description}</p>
+            <p className="text-[14px] sm:text-base">{description}</p>
             <Button small asChild className="mt-1.5">
               <Link href={`${LINKS.CATEGORIES}/${slug}`}>Start quiz</Link>
             </Button>
