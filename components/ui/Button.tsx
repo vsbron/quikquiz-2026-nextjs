@@ -30,7 +30,7 @@ function Button({
       onClick={onClick}
     >
       <span
-        className={`${small ? spanSmall : spanBig} block rounded-lg bg-orange-50 border-3 border-chocolate/60 group-active:-translate-y-0.5 transition-transform ${!asChild && "sm:px-5 sm:py-4"}`}
+        className={`${small ? spanSmall : spanBig} h-full flex-center rounded-lg bg-orange-50 border-3 border-chocolate/60 group-active:-translate-y-0.5 transition-transform ${!asChild && "sm:px-5 sm:py-4"}`}
       >
         {children}
       </span>

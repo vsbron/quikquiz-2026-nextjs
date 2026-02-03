@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
 
+import QuestionsDisplay from "@/components/QuestionsDisplay";
 import Button from "@/components/ui/Button";
 import SectionTitle from "@/components/ui/SectionTitle";
-import QuestionsDisplay from "./QuestionsDisplay";
 
 function QuizSection({ questions }: { questions: QuestionsPack }) {
   // Create state value for Difficulty
@@ -17,13 +17,16 @@ function QuizSection({ questions }: { questions: QuestionsPack }) {
   // Returned JSX
   return (
     <section>
-      <SectionTitle>{`${questions.title} Quiz`}</SectionTitle>
+      <SectionTitle className="mb-3!">{`${questions.title} Quiz`}</SectionTitle>
       {difficulty ? (
         <QuestionsDisplay questions={questions.difficulties[difficulty]} />
       ) : (
         <div>
-          <div>Please select the Difficulty</div>
-          <div className="flex gap-6 mt-8">
+          <p>{questions.description}</p>
+          <div className="text-center mt-12 text-xl">
+            Please select the Difficulty
+          </div>
+          <div className="flex gap-6 mt-8 justify-center">
             <Button onClick={() => buttonHandler("casual")}>Casual</Button>
             <Button onClick={() => buttonHandler("moderate")}>Moderate</Button>
             <Button onClick={() => buttonHandler("pro")}>Pro</Button>
