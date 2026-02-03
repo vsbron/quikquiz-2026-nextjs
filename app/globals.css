@@ -63,6 +63,9 @@ section a {
 .shadow-big {
   @apply sm:shadow-[15px_15px_0] shadow-chocolate/80;
 }
+.text-section {
+  @apply max-w-200 mx-auto;
+}
 .wrapper {
   @apply bg-background rounded-lg h-full;
 }

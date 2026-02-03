@@ -6,7 +6,7 @@ import { LINKS } from "@/utils/constants";
 function HowToPlaySection() {
   // Returned JSX
   return (
-    <section>
+    <section className="text-section">
       <SectionTitle>How to play</SectionTitle>
       <ol className="flex flex-col gap-1">
         <li>

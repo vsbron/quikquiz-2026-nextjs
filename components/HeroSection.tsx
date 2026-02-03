@@ -1,13 +1,10 @@
-import Link from "next/link";
-
-import Button from "@/components/ui/Button";
+import HeroButtons from "@/components/HeroButtons";
 import SectionTitle from "@/components/ui/SectionTitle";
-import HeroButtons from "./HeroButtons";
 
 function HeroSection() {
   // Returned JSX
   return (
-    <section className="flex flex-col gap-1 sm:my-8">
+    <section className="text-section flex flex-col gap-1 sm:my-8">
       <div className="text-6xl font-black text-center">QxQ</div>
       <SectionTitle>QuikQuiz</SectionTitle>
       <p>

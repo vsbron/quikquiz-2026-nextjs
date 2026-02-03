@@ -27,7 +27,7 @@ function QuestionsDisplay({ questions, difficulty }: QuestionsDisplayProps) {
   // Conditional return if the quiz is completed
   if (currentIndex >= questions.length)
     return (
-      <div className="text-center">
+      <div className="text-center max-w-160 mx-auto mt-8">
         <h2 className="text-2xl">Congratulations ✨</h2>
         <p>
           You have reached the end of the quiz.
