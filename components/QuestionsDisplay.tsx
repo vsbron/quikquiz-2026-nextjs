@@ -27,7 +27,7 @@ function QuestionsDisplay({ questions, difficulty }: QuestionsDisplayProps) {
   // Conditional return if the quiz is completed
   if (currentIndex >= questions.length)
     return (
-      <div className="text-center max-w-160 mx-auto mt-8">
+      <div className="text-center max-w-160 mx-auto mt-8 max-sm:text-base">
         <h2 className="text-2xl">Congratulations ✨</h2>
         <p>
           You have reached the end of the quiz.
@@ -66,19 +66,20 @@ function QuestionsDisplay({ questions, difficulty }: QuestionsDisplayProps) {
                 i === currentIndex ? "opacity-100" : "opacity-0"
               }`}
             >
-              <div className="bg-white rounded-xl max-sm:min-h-70 sm:h-68 flex-center text-center shadow-md shadow-chocolate/50 pt-3 pb-5 px-4 sm:px-8 mb-8">
-                <div>
-                  <h2 className="text-xl sm:text-2xl font-merriweather">
+              <div className="bg-white rounded-xl max-sm:min-h-65 sm:h-68 flex-center text-center shadow-md shadow-chocolate/50 pt-2 sm:pt-3 pb-3 sm:pb-5 px-4 sm:px-8 mb-8">
+                <div className="w-full">
+                  <h2 className="text-xl sm:text-2xl font-merriweather px-4">
                     {question}
                   </h2>
                   {image && (
-                    <Image
-                      src={image}
-                      className="mt-2 mx-auto"
-                      width={480}
-                      height={200}
-                      alt={question}
-                    />
+                    <div className="relative max-w-80 h-40 sm:max-w-120 sm:h-50 mt-2 mx-auto">
+                      <Image
+                        src={image}
+                        className="object-cover"
+                        fill
+                        alt={question}
+                      />
+                    </div>
                   )}
                 </div>
               </div>
