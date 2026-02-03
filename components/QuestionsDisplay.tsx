@@ -1,12 +1,28 @@
-import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
 import Button from "@/components/ui/Button";
 
-function QuestionsDisplay({ questions }: { questions: Question[] }) {
-  // Set state value for current question
+// Props interface
+interface QuestionsDisplayProps {
+  questions: Question[];
+  difficulty: string;
+}
+
+// The component
+function QuestionsDisplay({ questions, difficulty }: QuestionsDisplayProps) {
+  // Set state value for current question and selected answers
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [selectedAnswers, setSelectedAnswers] = useState<string[]>([]);
+
+  // Selecting an answer handler
+  const submitAnswer = (answer: string) => {
+    setSelectedAnswers((curAnswers) => [...curAnswers, answer]);
+    setCurrentIndex((i) => i + 1);
+  };
+
+  // Finish the quiz handler
+  const resultsHandler = () => {};
 
   // Conditional return if the quiz is completed
   if (currentIndex >= questions.length)
@@ -22,8 +38,8 @@ function QuestionsDisplay({ questions }: { questions: Question[] }) {
           Your results are ready. Visit the results page to view your final
           score and see an overall summary of your performance in the quiz.
         </p>
-        <Button small asChild className="mt-5">
-          <Link href="/">Check my results</Link>
+        <Button small asChild className="mt-5" onClick={resultsHandler}>
+          Check my results
         </Button>
       </div>
     );
@@ -36,7 +52,7 @@ function QuestionsDisplay({ questions }: { questions: Question[] }) {
           Question: {currentIndex + 1}/{questions.length}
         </span>
         <span>|</span>
-        <span>Difficulty: Pro</span>
+        <span className="capitalize">Difficulty: {difficulty}</span>
       </div>
       <div className="overflow-hidden -mx-3">
         <div
@@ -70,7 +86,7 @@ function QuestionsDisplay({ questions }: { questions: Question[] }) {
                   <Button
                     key={answer}
                     small
-                    onClick={() => setCurrentIndex((i) => i + 1)}
+                    onClick={() => submitAnswer(answer)}
                     className="text-xl!"
                   >
                     {answer}

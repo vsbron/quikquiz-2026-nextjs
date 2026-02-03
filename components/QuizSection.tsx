@@ -19,7 +19,10 @@ function QuizSection({ questions }: { questions: QuestionsPack }) {
     <section>
       <SectionTitle className="mb-3!">{`${questions.title} Quiz`}</SectionTitle>
       {difficulty ? (
-        <QuestionsDisplay questions={questions.difficulties[difficulty]} />
+        <QuestionsDisplay
+          questions={questions.difficulties[difficulty]}
+          difficulty={difficulty}
+        />
       ) : (
         <div>
           <p>{questions.description}</p>
