@@ -1,7 +1,9 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 
 import Button from "@/components/ui/Button";
+
+import { shuffleAnswers } from "@/utils/helpers";
 
 // Props interface
 interface QuestionsDisplayProps {
@@ -14,6 +16,12 @@ function QuestionsDisplay({ questions, difficulty }: QuestionsDisplayProps) {
   // Set state value for current question and selected answers
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<string[]>([]);
+
+  // Shuffle the answers
+  const shuffledQuestions = useMemo(
+    () => questions.map((q) => ({ ...q, answers: shuffleAnswers(q.answers) })),
+    [questions],
+  );
 
   // Selecting an answer handler
   const submitAnswer = (answer: string) => {
@@ -49,7 +57,7 @@ function QuestionsDisplay({ questions, difficulty }: QuestionsDisplayProps) {
     <div className="relative w-full mx-auto">
       <div className="flex justify-center max-sm:flex-col max-sm:items-center sm:gap-3 mb-1 text-[15px] sm:text-base">
         <span>
-          Question: {currentIndex + 1}/{questions.length}
+          Question: {currentIndex + 1}/{shuffledQuestions.length}
         </span>
         <span className="max-sm:hidden">|</span>
         <span className="capitalize">Difficulty: {difficulty}</span>
@@ -59,7 +67,7 @@ function QuestionsDisplay({ questions, difficulty }: QuestionsDisplayProps) {
           className="flex transition-transform duration-700 ease-in-out max-w-2xl mx-auto"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
-          {questions.map(({ question, image, answers }, i) => (
+          {shuffledQuestions.map(({ question, image, answers }, i) => (
             <div
               key={question}
               className={`w-full shrink-0 px-3 transition-opacity duration-700 ${
