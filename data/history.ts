@@ -6,6 +6,7 @@ export const historyQuestions: QuestionsPack = {
   difficulties: {
     casual: [
       {
+        id: 1,
         question: "Who was the first President of the United States?",
         answers: [
           "George Washington",
@@ -16,6 +17,7 @@ export const historyQuestions: QuestionsPack = {
         correctAnswer: "George Washington",
       },
       {
+        id: 2,
         question: "In which century did World War II take place?",
         answers: [
           "20th century",
@@ -26,11 +28,13 @@ export const historyQuestions: QuestionsPack = {
         correctAnswer: "20th century",
       },
       {
+        id: 3,
         question: "Which ancient civilization built the pyramids of Giza?",
         answers: ["Egyptians", "Romans", "Greeks", "Mayans"],
         correctAnswer: "Egyptians",
       },
       {
+        id: 4,
         question: "Who is shown in the image?",
         image: "historical_figure_napoleon.jpg",
         answers: [
@@ -42,6 +46,7 @@ export const historyQuestions: QuestionsPack = {
         correctAnswer: "Napoleon Bonaparte",
       },
       {
+        id: 5,
         question: "Which empire was ruled by Julius Caesar?",
         answers: [
           "Roman Empire",
@@ -52,6 +57,7 @@ export const historyQuestions: QuestionsPack = {
         correctAnswer: "Roman Empire",
       },
       {
+        id: 6,
         question: "What was the Cold War primarily between?",
         answers: [
           "USA and USSR",
@@ -62,17 +68,20 @@ export const historyQuestions: QuestionsPack = {
         correctAnswer: "USA and USSR",
       },
       {
+        id: 7,
         question: "Which ship sank in 1912 after hitting an iceberg?",
         answers: ["Titanic", "Lusitania", "Britannic", "Olympic"],
         correctAnswer: "Titanic",
       },
       {
+        id: 8,
         question: "Which structure is shown in the image?",
         image: "historical_structure_colosseum.jpg",
         answers: ["Colosseum", "Pantheon", "Parthenon", "Acropolis"],
         correctAnswer: "Colosseum",
       },
       {
+        id: 9,
         question: "Who was known as the Maid of Orléans?",
         answers: [
           "Joan of Arc",
@@ -83,6 +92,7 @@ export const historyQuestions: QuestionsPack = {
         correctAnswer: "Joan of Arc",
       },
       {
+        id: 10,
         question: "Which country launched the first artificial satellite?",
         answers: ["Soviet Union", "United States", "Germany", "Japan"],
         correctAnswer: "Soviet Union",
@@ -91,16 +101,19 @@ export const historyQuestions: QuestionsPack = {
 
     moderate: [
       {
+        id: 1,
         question: "In which year did the Berlin Wall fall?",
         answers: ["1989", "1991", "1985", "1995"],
         correctAnswer: "1989",
       },
       {
+        id: 2,
         question: "Who was the first Roman Emperor?",
         answers: ["Augustus", "Julius Caesar", "Nero", "Tiberius"],
         correctAnswer: "Augustus",
       },
       {
+        id: 3,
         question:
           "Which war was fought between the North and South in the United States?",
         answers: [
@@ -112,6 +125,7 @@ export const historyQuestions: QuestionsPack = {
         correctAnswer: "American Civil War",
       },
       {
+        id: 4,
         question: "Which treaty ended World War I?",
         answers: [
           "Treaty of Versailles",
@@ -122,6 +136,7 @@ export const historyQuestions: QuestionsPack = {
         correctAnswer: "Treaty of Versailles",
       },
       {
+        id: 5,
         question: "Which leader is shown in the image?",
         image: "historical_figure_gandhi.jpg",
         answers: [
@@ -133,11 +148,13 @@ export const historyQuestions: QuestionsPack = {
         correctAnswer: "Mahatma Gandhi",
       },
       {
+        id: 6,
         question: "Which civilization built Machu Picchu?",
         answers: ["Inca", "Aztec", "Maya", "Olmec"],
         correctAnswer: "Inca",
       },
       {
+        id: 7,
         question: "Which revolution began in 1789?",
         answers: [
           "French Revolution",
@@ -148,6 +165,7 @@ export const historyQuestions: QuestionsPack = {
         correctAnswer: "French Revolution",
       },
       {
+        id: 8,
         question: "What was the main purpose of the Magna Carta?",
         answers: [
           "Limit the power of the king",
@@ -158,6 +176,7 @@ export const historyQuestions: QuestionsPack = {
         correctAnswer: "Limit the power of the king",
       },
       {
+        id: 9,
         question: "Which map is shown in the image?",
         image: "historical_map_roman_empire.jpg",
         answers: [
@@ -169,6 +188,7 @@ export const historyQuestions: QuestionsPack = {
         correctAnswer: "Roman Empire",
       },
       {
+        id: 10,
         question: "Who was the first man to walk on the Moon?",
         answers: [
           "Neil Armstrong",
@@ -182,6 +202,7 @@ export const historyQuestions: QuestionsPack = {
 
     pro: [
       {
+        id: 1,
         question:
           "Which empire was defeated by the Mongols in 1258 at Baghdad?",
         answers: [
@@ -193,6 +214,7 @@ export const historyQuestions: QuestionsPack = {
         correctAnswer: "Abbasid Caliphate",
       },
       {
+        id: 2,
         question: `Who wrote "The Prince"?`,
         answers: [
           "Niccolò Machiavelli",
@@ -203,6 +225,7 @@ export const historyQuestions: QuestionsPack = {
         correctAnswer: "Niccolò Machiavelli",
       },
       {
+        id: 3,
         question: "Which event triggered World War I?",
         answers: [
           "Assassination of Archduke Franz Ferdinand",
@@ -213,6 +236,7 @@ export const historyQuestions: QuestionsPack = {
         correctAnswer: "Assassination of Archduke Franz Ferdinand",
       },
       {
+        id: 4,
         question: "Which historical document is shown in the image?",
         image: "historical_document_magna_carta.jpg",
         answers: [
@@ -224,11 +248,13 @@ export const historyQuestions: QuestionsPack = {
         correctAnswer: "Magna Carta",
       },
       {
+        id: 5,
         question: "Which dynasty built most of the Great Wall of China?",
         answers: ["Ming", "Qin", "Han", "Tang"],
         correctAnswer: "Ming",
       },
       {
+        id: 6,
         question: "Which empire was ruled by Suleiman the Magnificent?",
         answers: [
           "Ottoman Empire",
@@ -239,6 +265,7 @@ export const historyQuestions: QuestionsPack = {
         correctAnswer: "Ottoman Empire",
       },
       {
+        id: 7,
         question: "Which war introduced trench warfare on a massive scale?",
         answers: [
           "World War I",
@@ -249,6 +276,7 @@ export const historyQuestions: QuestionsPack = {
         correctAnswer: "World War I",
       },
       {
+        id: 8,
         question: "Which leader is shown in the image?",
         image: "historical_figure_lenin.jpg",
         answers: [
@@ -260,11 +288,13 @@ export const historyQuestions: QuestionsPack = {
         correctAnswer: "Vladimir Lenin",
       },
       {
+        id: 9,
         question: "Which ancient city was destroyed by Mount Vesuvius?",
         answers: ["Pompeii", "Athens", "Sparta", "Carthage"],
         correctAnswer: "Pompeii",
       },
       {
+        id: 10,
         question: `Which empire used the title "Shahanshah"?`,
         answers: [
           "Persian Empire",

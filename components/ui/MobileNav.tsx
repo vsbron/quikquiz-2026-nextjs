@@ -17,9 +17,9 @@ function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
     <div
       className={`fixed top-0 bottom-0 left-0 right-18 text-chocolate py-8 px-7 bg-orange-50 border-8 border-l-0 border-chocolate rounded-r-xl transition-transform  ${isMenuOpen ? "translate-x-0" : "-translate-x-full"}`}
     >
-      <Image src="/logo.svg" width={70} height={38} alt={`${APP_NAME} Logo`} />
+      <Image src="/logo.svg" width={75} height={41} alt={`${APP_NAME} Logo`} />
       <div className="mt-2 mb-4 pb-3 border-b border-chocolate/30 flex items-center gap-3"></div>
-      <h4 className="font-merriweather text-2xl mb-2 tracking-wider">
+      <h4 className="font-merriweather text-2xl font-bold mb-2 tracking-wider">
         Navigation:
       </h4>
       <ul className="flex flex-col gap-3 pl-0! text-xl mt-4!">

@@ -6,16 +6,19 @@ export const languageQuestions: QuestionsPack = {
   difficulties: {
     casual: [
       {
+        id: 1,
         question: `Which word is a synonym for "quick"?`,
         answers: ["Rapid", "Lazy", "Heavy", "Silent"],
         correctAnswer: "Rapid",
       },
       {
+        id: 2,
         question: "Which word is spelled correctly?",
         answers: ["Definitely", "Definately", "Definitly", "Definatelly"],
         correctAnswer: "Definitely",
       },
       {
+        id: 3,
         question: `What does the idiom "break the ice" usually mean?`,
         answers: [
           "Start a conversation in an awkward situation",
@@ -26,17 +29,20 @@ export const languageQuestions: QuestionsPack = {
         correctAnswer: "Start a conversation in an awkward situation",
       },
       {
+        id: 4,
         question: `Which word means the opposite of "ancient"?`,
         answers: ["Modern", "Empty", "Distant", "Rare"],
         correctAnswer: "Modern",
       },
       {
+        id: 5,
         question: "Which punctuation mark is shown in the image?",
         image: "punctuation_semicolon.jpg", // ;
         answers: ["Semicolon", "Colon", "Comma", "Apostrophe"],
         correctAnswer: "Semicolon",
       },
       {
+        id: 6,
         question: `What does "bilingual" mean?`,
         answers: [
           "Able to speak two languages",
@@ -47,22 +53,26 @@ export const languageQuestions: QuestionsPack = {
         correctAnswer: "Able to speak two languages",
       },
       {
+        id: 7,
         question: `Which word best completes the phrase: "a piece of ___"?`,
         answers: ["cake", "steel", "storm", "glass"],
         correctAnswer: "cake",
       },
       {
+        id: 8,
         question: "Which pair are homophones (sound the same) in English?",
         answers: ["Their / There", "Cat / Cut", "Book / Back", "Day / Die"],
         correctAnswer: "Their / There",
       },
       {
+        id: 9,
         question: "Which word is shown in the image?",
         image: "word_typo_misspell_receive.jpg", // image showing "receive"
         answers: ["Receive", "Recieve", "Receeve", "Reseive"],
         correctAnswer: "Receive",
       },
       {
+        id: 10,
         question: `What does the word "literal" mean?`,
         answers: [
           "Exact, not exaggerated",
@@ -76,6 +86,7 @@ export const languageQuestions: QuestionsPack = {
 
     moderate: [
       {
+        id: 1,
         question: `Which word means "a fear of confined spaces"?`,
         answers: [
           "Claustrophobia",
@@ -86,6 +97,7 @@ export const languageQuestions: QuestionsPack = {
         correctAnswer: "Claustrophobia",
       },
       {
+        id: 2,
         question: `Which sentence uses "affect" correctly?`,
         answers: [
           "The weather can affect my mood.",
@@ -96,27 +108,32 @@ export const languageQuestions: QuestionsPack = {
         correctAnswer: "The weather can affect my mood.",
       },
       {
+        id: 3,
         question: `What does the prefix "bio-" most commonly relate to?`,
         answers: ["Life", "Sound", "Heat", "Light"],
         correctAnswer: "Life",
       },
       {
+        id: 4,
         question: `Which word is the best match for "brief"?`,
         answers: ["Concise", "Ancient", "Fragile", "Polite"],
         correctAnswer: "Concise",
       },
       {
+        id: 5,
         question: "Which writing style is shown in the image?",
         image: "writing_style_cursive.jpg", // cursive handwriting sample
         answers: ["Cursive", "Gothic", "Italic", "Calligraphy"],
         correctAnswer: "Cursive",
       },
       {
+        id: 6,
         question: "Which is an example of a palindrome?",
         answers: ["Racecar", "Triangle", "Computer", "Elephant"],
         correctAnswer: "Racecar",
       },
       {
+        id: 7,
         question: `What does "etymology" study?`,
         answers: [
           "Origins of words",
@@ -127,17 +144,20 @@ export const languageQuestions: QuestionsPack = {
         correctAnswer: "Origins of words",
       },
       {
+        id: 8,
         question: `Which word is closest in meaning to "obsolete"?`,
         answers: ["Outdated", "Popular", "Dangerous", "Accurate"],
         correctAnswer: "Outdated",
       },
       {
+        id: 9,
         question: "Which word in the image is the adverb?",
         image: "parts_of_speech_quickly.jpg", // sentence highlighting "quickly"
         answers: ["Quickly", "Quick", "Runner", "Run"],
         correctAnswer: "Quickly",
       },
       {
+        id: 10,
         question: `Which phrase is an idiom meaning "very easy"?`,
         answers: [
           "Piece of cake",
@@ -151,16 +171,19 @@ export const languageQuestions: QuestionsPack = {
 
     pro: [
       {
+        id: 1,
         question: `Which word means "to openly show contempt"?`,
         answers: ["Deride", "Admire", "Conserve", "Confirm"],
         correctAnswer: "Deride",
       },
       {
+        id: 2,
         question: `Which term describes a word that sounds like what it means (e.g., "buzz")?`,
         answers: ["Onomatopoeia", "Oxymoron", "Metonymy", "Hyperbole"],
         correctAnswer: "Onomatopoeia",
       },
       {
+        id: 3,
         question: `Which sentence uses "fewer" correctly?`,
         answers: [
           "There are fewer cars on the road today.",
@@ -171,17 +194,20 @@ export const languageQuestions: QuestionsPack = {
         correctAnswer: "There are fewer cars on the road today.",
       },
       {
+        id: 4,
         question: `Which word is formed by blending two words (like "brunch")?`,
         answers: ["Portmanteau", "Epithet", "Anagram", "Homonym"],
         correctAnswer: "Portmanteau",
       },
       {
+        id: 5,
         question: "Which symbol is shown in the image?",
         image: "punctuation_em_dash.jpg", // —
         answers: ["Em dash", "Hyphen", "En dash", "Minus sign"],
         correctAnswer: "Em dash",
       },
       {
+        id: 6,
         question: `Which pair are "false friends" (look similar but differ in meaning) across languages?`,
         answers: [
           `English "actual" vs Spanish "actual" (meaning "current")`,
@@ -192,6 +218,7 @@ export const languageQuestions: QuestionsPack = {
         correctAnswer: `English "actual" vs Spanish "actual" (meaning "current")`,
       },
       {
+        id: 7,
         question: `What is an "oxymoron"?`,
         answers: [
           "A phrase with contradictory terms",
@@ -202,11 +229,13 @@ export const languageQuestions: QuestionsPack = {
         correctAnswer: "A phrase with contradictory terms",
       },
       {
+        id: 8,
         question: `Which word is an anagram of "LISTEN"?`,
         answers: ["SILENT", "TENSIL", "ENLIST", "INLETS"],
         correctAnswer: "SILENT",
       },
       {
+        id: 9,
         question: "Which sentence is written in the passive voice?",
         answers: [
           "The window was broken by the storm.",
@@ -217,6 +246,7 @@ export const languageQuestions: QuestionsPack = {
         correctAnswer: "The window was broken by the storm.",
       },
       {
+        id: 10,
         question: `Which word means "the use of too many words"?`,
         answers: ["Verbosity", "Clarity", "Brevity", "Irony"],
         correctAnswer: "Verbosity",

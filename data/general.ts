@@ -6,11 +6,13 @@ export const generalQuestions: QuestionsPack = {
   difficulties: {
     casual: [
       {
+        id: 1,
         question: "Which planet is known as the Red Planet?",
         answers: ["Venus", "Mars", "Jupiter", "Mercury"],
         correctAnswer: "Mars",
       },
       {
+        id: 2,
         question: "What does Wi-Fi stand for?",
         answers: [
           "Wireless Fidelity",
@@ -21,11 +23,13 @@ export const generalQuestions: QuestionsPack = {
         correctAnswer: "It doesn't officially stand for anything",
       },
       {
+        id: 3,
         question: "Which country uses the yen as its currency?",
         answers: ["China", "South Korea", "Japan", "Thailand"],
         correctAnswer: "Japan",
       },
       {
+        id: 4,
         question: "Who painted the Mona Lisa?",
         answers: [
           "Vincent van Gogh",
@@ -36,6 +40,7 @@ export const generalQuestions: QuestionsPack = {
         correctAnswer: "Leonardo da Vinci",
       },
       {
+        id: 5,
         question: "What is the largest ocean on Earth?",
         answers: [
           "Atlantic Ocean",
@@ -46,19 +51,22 @@ export const generalQuestions: QuestionsPack = {
         correctAnswer: "Pacific Ocean",
       },
       {
+        id: 6,
         question: "Which animal is shown in the image?",
-        image: "https://example.com/images/panda.jpg",
+        image: "/quiz/general/casual-q6.png",
         answers: ["Raccoon", "Polar Bear", "Panda", "Badger"],
         correctAnswer: "Panda",
       },
       {
+        id: 7,
         question: "How many minutes are in one hour?",
         answers: ["50", "60", "70", "100"],
         correctAnswer: "60",
       },
       {
+        id: 8,
         question: "Which famous building is shown in the image?",
-        image: "https://example.com/images/eiffel-tower.jpg",
+        image: "/quiz/general/casual-q8.png",
         answers: [
           "Empire State Building",
           "Eiffel Tower",
@@ -68,13 +76,15 @@ export const generalQuestions: QuestionsPack = {
         correctAnswer: "Eiffel Tower",
       },
       {
+        id: 9,
         question: "Which language has the most native speakers worldwide?",
         answers: ["English", "Spanish", "Mandarin Chinese", "Hindi"],
         correctAnswer: "Mandarin Chinese",
       },
       {
+        id: 10,
         question: "Which logo is shown in the image?",
-        image: "https://example.com/images/apple-logo.jpg",
+        image: "/quiz/general/casual-q10.png",
         answers: ["Microsoft", "Apple", "Samsung", "Sony"],
         correctAnswer: "Apple",
       },
@@ -82,23 +92,27 @@ export const generalQuestions: QuestionsPack = {
 
     moderate: [
       {
+        id: 1,
         question: "What is the capital city of Canada?",
         answers: ["Toronto", "Vancouver", "Ottawa", "Montreal"],
         correctAnswer: "Ottawa",
       },
       {
+        id: 2,
         question: `Which element has the chemical symbol "Fe"?`,
         answers: ["Fluorine", "Iron", "Lead", "Zinc"],
         correctAnswer: "Iron",
       },
       {
+        id: 3,
         question: "In which year did the Berlin Wall fall?",
         answers: ["1985", "1987", "1989", "1991"],
         correctAnswer: "1989",
       },
       {
+        id: 4,
         question: "Which painting is shown in the image?",
-        image: "https://example.com/images/starry-night.jpg",
+        image: "/quiz/general/moderate-q4.png",
         answers: [
           "The Scream",
           "Starry Night",
@@ -108,18 +122,21 @@ export const generalQuestions: QuestionsPack = {
         correctAnswer: "Starry Night",
       },
       {
+        id: 5,
         question: "What is the smallest prime number greater than 10?",
         answers: ["11", "13", "17", "19"],
         correctAnswer: "11",
       },
       {
+        id: 6,
         question: "Which country hosted the 2016 Summer Olympics?",
         answers: ["China", "Brazil", "UK", "Japan"],
         correctAnswer: "Brazil",
       },
       {
+        id: 7,
         question: "Which famous scientist is shown in the image?",
-        image: "https://example.com/images/einstein.jpg",
+        image: "/quiz/general/moderate-q7.png",
         answers: [
           "Isaac Newton",
           "Albert Einstein",
@@ -129,6 +146,7 @@ export const generalQuestions: QuestionsPack = {
         correctAnswer: "Albert Einstein",
       },
       {
+        id: 8,
         question: `What does the term "CPU" stand for?`,
         answers: [
           "Central Processing Unit",
@@ -139,13 +157,15 @@ export const generalQuestions: QuestionsPack = {
         correctAnswer: "Central Processing Unit",
       },
       {
+        id: 9,
         question: "Which river flows through Paris?",
         answers: ["Thames", "Danube", "Seine", "Rhine"],
         correctAnswer: "Seine",
       },
       {
+        id: 10,
         question: "Which flag is shown in the image?",
-        image: "https://example.com/images/flag-norway.jpg",
+        image: "/quiz/general/moderate-10.png",
         answers: ["Sweden", "Finland", "Denmark", "Norway"],
         correctAnswer: "Norway",
       },
@@ -153,11 +173,13 @@ export const generalQuestions: QuestionsPack = {
 
     pro: [
       {
+        id: 1,
         question: "Which ancient civilization built Machu Picchu?",
         answers: ["Aztec", "Maya", "Inca", "Olmec"],
         correctAnswer: "Inca",
       },
       {
+        id: 2,
         question: "What is the approximate speed of light in a vacuum?",
         answers: [
           "150,000 km/s",
@@ -168,6 +190,7 @@ export const generalQuestions: QuestionsPack = {
         correctAnswer: "300,000 km/s",
       },
       {
+        id: 3,
         question: `Which philosopher wrote "Thus Spoke Zarathustra"?`,
         answers: [
           "Immanuel Kant",
@@ -178,24 +201,28 @@ export const generalQuestions: QuestionsPack = {
         correctAnswer: "Friedrich Nietzsche",
       },
       {
+        id: 4,
         question: "Which structure is shown in the image?",
-        image: "https://example.com/images/pantheon.jpg",
+        image: "/quiz/general/pro-4.png",
         answers: ["Colosseum", "Pantheon", "Parthenon", "Hagia Sophia"],
         correctAnswer: "Pantheon",
       },
       {
+        id: 5,
         question: "What is the longest river in Africa?",
         answers: ["Nile", "Congo", "Niger", "Zambezi"],
         correctAnswer: "Nile",
       },
       {
+        id: 6,
         question: "Which country was formerly known as Abyssinia?",
         answers: ["Eritrea", "Ethiopia", "Somalia", "Sudan"],
         correctAnswer: "Ethiopia",
       },
       {
+        id: 7,
         question: "Which physicist is shown in the image?",
-        image: "https://example.com/images/tesla.jpg",
+        image: "/quiz/general/pro-7.png",
         answers: [
           "Thomas Edison",
           "Nikola Tesla",
@@ -205,6 +232,7 @@ export const generalQuestions: QuestionsPack = {
         correctAnswer: "Nikola Tesla",
       },
       {
+        id: 8,
         question: `What does "HTTP" stand for?`,
         answers: [
           "HyperText Transfer Protocol",
@@ -215,6 +243,7 @@ export const generalQuestions: QuestionsPack = {
         correctAnswer: "HyperText Transfer Protocol",
       },
       {
+        id: 9,
         question: `Which novel begins with the line "Call me Ishmael"?`,
         answers: [
           "The Old Man and the Sea",
@@ -225,8 +254,9 @@ export const generalQuestions: QuestionsPack = {
         correctAnswer: "Moby-Dick",
       },
       {
+        id: 10,
         question: "Which painting is shown in the image?",
-        image: "https://example.com/images/guernica.jpg",
+        image: "/quiz/general/pro-10.png",
         answers: [
           "Guernica",
           "The Last Supper",

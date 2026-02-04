@@ -8,6 +8,7 @@ type QuestionsPack = {
 };
 
 type Question = {
+  id: number;
   question: string;
   answers: string[];
   image?: string;

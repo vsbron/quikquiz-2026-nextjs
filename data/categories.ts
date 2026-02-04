@@ -11,13 +11,13 @@ import { languageQuestions } from "./language";
 
 export const CATEGORIES: QuestionsPack[] = [
   generalQuestions,
-  harryPotterQuestions,
-  marvelQuestions,
   geographyQuestions,
   historyQuestions,
-  technologyQuestions,
-  logicFactsQuestions,
-  scienceQuestions,
   moviesTvQuestions,
+  harryPotterQuestions,
+  marvelQuestions,
+  scienceQuestions,
+  technologyQuestions,
   languageQuestions,
+  logicFactsQuestions,
 ];
