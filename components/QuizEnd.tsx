@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { useRouter } from "next/router";
 
 import Button from "@/components/ui/Button";
+import { useRouter } from "next/navigation";
 
 interface QuizEndProps {
   answers: string[];
@@ -21,7 +21,7 @@ function QuizEnd({ answers, category, difficulty }: QuizEndProps) {
       setIsCalculating(true);
 
       // Fetch the results
-      const res = await fetch(`/api/results`, {
+      const res = await fetch(`/api/results/${category}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ category, answers, difficulty }),
@@ -34,7 +34,6 @@ function QuizEnd({ answers, category, difficulty }: QuizEndProps) {
       const data = (await res.json()) as {
         score: number;
         total: number;
-        summary?: unknown;
       };
 
       // Store results in sessionStorage
@@ -43,13 +42,12 @@ function QuizEnd({ answers, category, difficulty }: QuizEndProps) {
         JSON.stringify({
           category,
           difficulty,
-          answers,
           ...data,
         }),
       );
 
       // Redirect the user
-      router.push(`/results/${category}`);
+      router.push(`/results/`);
     } catch (e: unknown) {
       throw new Error(
         `Failed to calculate the results. (${e instanceof Error ? e.message : e})`,

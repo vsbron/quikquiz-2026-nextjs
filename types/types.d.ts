@@ -14,3 +14,10 @@ type Question = {
   image?: string;
   correctAnswer: string;
 };
+
+type QuizResults = {
+  category: string;
+  difficulty: string;
+  score: number;
+  total: number;
+};
