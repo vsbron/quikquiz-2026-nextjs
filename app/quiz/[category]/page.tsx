@@ -1,4 +1,5 @@
 import QuizSection from "@/components/QuizSection";
+import { notFound } from "next/navigation";
 
 // Props interface
 interface QuestionsPageProps {
@@ -17,7 +18,7 @@ async function QuestionsPage({ params }: QuestionsPageProps) {
   );
 
   // Guard clause
-  if (!res.ok) throw new Error("Category not found");
+  if (!res.ok) notFound();
 
   // Get the actual data and destructure it
   const questionsPack = (await res.json()) as QuestionsPack;
