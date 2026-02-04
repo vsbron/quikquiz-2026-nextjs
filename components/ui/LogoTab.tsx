@@ -1,8 +1,9 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import Tab from "@/components/ui/Tab";
 
-import { LINKS } from "@/utils/constants";
+import { APP_NAME, LINKS } from "@/utils/constants";
 
 function LogoTab() {
   // Returned JSX
@@ -12,8 +13,7 @@ function LogoTab() {
         className="text-xl flex items-center gap-2 leading-0"
         href={LINKS.HOME}
       >
-        <span className="font-black text-3xl">QxQ</span>
-        <span className="font-merriweather">QuikQuiz</span>
+        <Image src="/logo.svg" width={75} height={41} alt={`${APP_NAME} Logo`} />
       </Link>
     </Tab>
   );

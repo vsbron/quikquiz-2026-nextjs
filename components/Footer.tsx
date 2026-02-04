@@ -1,4 +1,6 @@
 import Nav from "@/components/Nav";
+import { APP_NAME } from "@/utils/constants";
+import Image from "next/image";
 
 function Footer() {
   // Returned JSX
@@ -20,8 +22,8 @@ function Footer() {
         </div>
       </div>
       <div className="flex items-end gap-0.5 md:flex-col">
-        <div className="max-md:hidden">
-          <span className="font-bold">QxQ</span> QuikQuiz
+        <div className="hidden md:flex items-end gap-2 leading-4">
+          QuikQuiz <Image src="/logo.svg" width={45} height={25} alt={`${APP_NAME} Logo`} /> 
         </div>
         <div className="text-[15px]">
           ©{new Date().getFullYear()}. All rights reserved

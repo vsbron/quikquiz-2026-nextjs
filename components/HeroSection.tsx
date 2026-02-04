@@ -1,12 +1,18 @@
+import Image from "next/image";
+
 import HeroButtons from "@/components/HeroButtons";
 import SectionTitle from "@/components/ui/SectionTitle";
+
+import { APP_NAME } from "@/utils/constants";
 
 function HeroSection() {
   // Returned JSX
   return (
     <section className="text-section flex flex-col gap-1 sm:my-8">
-      <div className="text-6xl font-black text-center">QxQ</div>
-      <SectionTitle>QuikQuiz</SectionTitle>
+      <div className="flex-center gap-5 mb-8">
+        <Image src="/logo.svg" width={175} height={96} alt={`${APP_NAME} Logo`} />
+        <SectionTitle className="mb-0! text-[50px]!">QuikQuiz</SectionTitle>
+      </div>
       <p>
         Welcome to a place where you can test your knowledge by taking fun,
         quick quizzes.
