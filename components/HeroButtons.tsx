@@ -6,7 +6,7 @@ import { LINKS } from "@/utils/constants";
 function HeroButtons() {
   // Returned JSX
   return (
-    <div className="flex flex-wrap justify-center gap-5 sm:gap-8 my-8 sm:mt-10">
+    <div className="flex flex-wrap justify-center gap-5 sm:gap-8 my-5 sm:mt-10">
       <Button asChild>
         <Link
           href={LINKS.HOW_TO_PLAY}

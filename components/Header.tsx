@@ -1,12 +1,20 @@
 import EmptyTabs from "@/components/ui/EmptyTabs";
 import LogoTab from "@/components/ui/LogoTab";
+import MobileLogo from "@/components/ui/MobileLogo";
+import Hamburger from "./ui/Hamburger";
 
 function Header() {
   // Returned JSX
   return (
-    <header className="justify-between items-end px-5 hidden sm:flex">
-      <LogoTab />
-      <EmptyTabs />
+    <header className="justify-between items-center sm:items-end px-5 flex max-sm:border-b border-chocolate max-sm:px-5 max-sm:py-2 max-sm:sticky top-0 z-50 max-sm:bg-background">
+      <div className="hidden sm:contents">
+        <LogoTab />
+        <EmptyTabs />
+      </div>
+      <div className="contents sm:hidden">
+        <MobileLogo />
+        <Hamburger />
+      </div>
     </header>
   );
 }

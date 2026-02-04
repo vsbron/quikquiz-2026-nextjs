@@ -25,11 +25,11 @@ function QuizSection({ questions }: { questions: QuestionsPack }) {
         />
       ) : (
         <div className="text-center text-section">
-          <p className="text-xl">{questions.description}</p>
-          <div className="text-center mt-12 text-2xl">
+          <p className="text-lg sm:text-xl">{questions.description}</p>
+          <div className="text-center mt-8 sm:mt-12 text-xl sm:text-2xl">
             Please select the Difficulty
           </div>
-          <div className="flex max-sm:flex-col max-sm:items-center gap-6 mt-6 justify-center">
+          <div className="flex max-sm:flex-col max-sm:items-center gap-5 sm:gap-6 mt-4 sm:mt-6 justify-center">
             <Button onClick={() => buttonHandler("casual")}>Casual</Button>
             <Button onClick={() => buttonHandler("moderate")}>Moderate</Button>
             <Button onClick={() => buttonHandler("pro")}>Pro</Button>

@@ -9,9 +9,18 @@ function HeroSection() {
   // Returned JSX
   return (
     <section className="text-section flex flex-col gap-1 sm:my-8">
-      <div className="flex-center gap-5 mb-8">
-        <Image src="/logo.svg" width={175} height={96} alt={`${APP_NAME} Logo`} />
-        <SectionTitle className="mb-0! text-[50px]!">QuikQuiz</SectionTitle>
+      <div className="flex-center gap-5 mb-2 sm:mb-8">
+        <div className="max-sm:hidden sm:w-30 sm:h-16.5 md:w-43.75 md:h-24 relative">
+          <Image
+            src="/logo.svg"
+            fill
+            className="object-contain"
+            alt={`${APP_NAME} Logo`}
+          />
+        </div>
+        <SectionTitle className="mb-0! text-[32px] sm:text-[40px]! md:text-[50px]!">
+          QuikQuiz
+        </SectionTitle>
       </div>
       <p>
         Welcome to a place where you can test your knowledge by taking fun,

@@ -1,0 +1,51 @@
+import Link from "next/link";
+import { Dispatch, SetStateAction } from "react";
+import { CodeBracketSquareIcon } from "@heroicons/react/24/solid";
+
+import { nav } from "@/utils/nav";
+import Image from "next/image";
+import { APP_NAME } from "@/utils/constants";
+
+interface MobileNavProps {
+  isMenuOpen: boolean;
+  setIsMenuOpen: Dispatch<SetStateAction<boolean>>;
+}
+
+function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
+  // Returned JSX
+  return (
+    <div
+      className={`fixed top-0 bottom-0 left-0 right-18 text-chocolate py-8 px-7 bg-orange-50 border-8 border-l-0 border-chocolate rounded-r-xl transition-transform  ${isMenuOpen ? "translate-x-0" : "-translate-x-full"}`}
+    >
+      <Image src="/logo.svg" width={70} height={38} alt={`${APP_NAME} Logo`} />
+      <div className="mt-2 mb-4 pb-3 border-b border-chocolate/30 flex items-center gap-3"></div>
+      <h4 className="font-merriweather text-2xl mb-2 tracking-wider">
+        Navigation:
+      </h4>
+      <ul className="flex flex-col gap-3 pl-0! text-xl mt-4!">
+        {nav.map(({ url, label, icon: Icon }) => (
+          <Link
+            key={url}
+            href={url}
+            onClick={() => setIsMenuOpen(false)}
+            className="flex items-center gap-2 hover:gap-4 transition-all"
+          >
+            <Icon className="w-5 h-5" />
+            {label}
+          </Link>
+        ))}
+        <a
+          href="https://github.com/vsbron/quikquiz-2026-nextjs"
+          onClick={() => setIsMenuOpen(false)}
+          target="_blank"
+          className="flex items-center gap-2 hover:gap-4 transition-all"
+        >
+          <CodeBracketSquareIcon className="w-5 h-5" />
+          Repo
+        </a>
+      </ul>
+    </div>
+  );
+}
+
+export default MobileNav;
