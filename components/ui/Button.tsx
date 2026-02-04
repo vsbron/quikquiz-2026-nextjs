@@ -7,6 +7,7 @@ interface ButtonProps {
   asChild?: boolean;
   className?: string;
   small?: boolean;
+  disabled?: boolean;
 }
 
 // The component
@@ -16,6 +17,7 @@ function Button({
   asChild,
   className,
   small = false,
+  disabled = false,
 }: ButtonProps) {
   // Preset button variant classes
   const buttonBig = "text-[20px] sm:text-[25px]";
@@ -30,6 +32,7 @@ function Button({
     <button
       className={`font-merriweather bg-accent rounded-lg cursor-pointer group ${small ? buttonSmall : buttonBig} ${asChild && ""} ${className}`}
       onClick={onClick}
+      disabled={disabled}
     >
       <span
         className={`${small ? spanSmall : spanBig} h-full flex-center rounded-lg bg-orange-50 border-3 border-chocolate/60 group-active:-translate-y-0.5 transition-transform ${!asChild && "sm:px-5 sm:py-4"}`}

@@ -22,6 +22,7 @@ function QuizSection({ questions }: { questions: QuestionsPack }) {
         <QuestionsDisplay
           questions={questions.difficulties[difficulty]}
           difficulty={difficulty}
+          category={questions.slug}
         />
       ) : (
         <div className="text-center text-section">
