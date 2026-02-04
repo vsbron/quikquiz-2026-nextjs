@@ -9,9 +9,12 @@ interface QuestionsPageProps {
 async function QuestionsPage({ params }: QuestionsPageProps) {
   // Get the params and fetch the data
   const { category } = await params;
-  const res = await fetch(`http://localhost:3000/api/categories/${category}`, {
-    cache: "no-store",
-  });
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_DOMAIN}/api/categories/${category}`,
+    {
+      cache: "no-store",
+    },
+  );
 
   // Guard clause
   if (!res.ok) throw new Error("Category not found");
