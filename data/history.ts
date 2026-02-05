@@ -36,7 +36,7 @@ export const historyQuestions: QuestionsPack = {
       {
         id: 4,
         question: "Who is shown in the image?",
-        image: "historical_figure_napoleon.jpg",
+        image: "/quiz/history/casual-q4.png",
         answers: [
           "Napoleon Bonaparte",
           "Julius Caesar",
@@ -76,7 +76,7 @@ export const historyQuestions: QuestionsPack = {
       {
         id: 8,
         question: "Which structure is shown in the image?",
-        image: "historical_structure_colosseum.jpg",
+        image: "/quiz/history/casual-q8.png",
         answers: ["Colosseum", "Pantheon", "Parthenon", "Acropolis"],
         correctAnswer: "Colosseum",
       },
@@ -138,7 +138,7 @@ export const historyQuestions: QuestionsPack = {
       {
         id: 5,
         question: "Which leader is shown in the image?",
-        image: "historical_figure_gandhi.jpg",
+        image: "/quiz/history/moderate-q5.png",
         answers: [
           "Mahatma Gandhi",
           "Jawaharlal Nehru",
@@ -178,7 +178,7 @@ export const historyQuestions: QuestionsPack = {
       {
         id: 9,
         question: "Which map is shown in the image?",
-        image: "historical_map_roman_empire.jpg",
+        image: "/quiz/history/moderate-q9.png",
         answers: [
           "Roman Empire",
           "Ottoman Empire",
@@ -238,7 +238,7 @@ export const historyQuestions: QuestionsPack = {
       {
         id: 4,
         question: "Which historical document is shown in the image?",
-        image: "historical_document_magna_carta.jpg",
+        image: "/quiz/history/pro-q4.png",
         answers: [
           "Magna Carta",
           "Declaration of Independence",
@@ -278,7 +278,7 @@ export const historyQuestions: QuestionsPack = {
       {
         id: 8,
         question: "Which leader is shown in the image?",
-        image: "historical_figure_lenin.jpg",
+        image: "/quiz/history/pro-q8.png",
         answers: [
           "Vladimir Lenin",
           "Joseph Stalin",

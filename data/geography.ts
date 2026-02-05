@@ -31,7 +31,7 @@ export const geographyQuestions: QuestionsPack = {
       {
         id: 4,
         question: "Which country is shown in the image?",
-        image: "country_shape_italy.jpg", // Italy shape
+        image: "/quiz/geography/casual-q4.png",
         answers: ["Italy", "Spain", "Greece", "Portugal"],
         correctAnswer: "Italy",
       },
@@ -56,7 +56,7 @@ export const geographyQuestions: QuestionsPack = {
       {
         id: 8,
         question: "Which landmark is shown in the image?",
-        image: "landmark_statue_of_liberty.jpg",
+        image: "/quiz/geography/casual-q8.png",
         answers: [
           "Statue of Liberty",
           "Christ the Redeemer",
@@ -101,7 +101,7 @@ export const geographyQuestions: QuestionsPack = {
       {
         id: 4,
         question: "Which country is shown in the image?",
-        image: "country_shape_norway.jpg",
+        image: "/quiz/geography/moderate-q4.png",
         answers: ["Norway", "Sweden", "Finland", "Iceland"],
         correctAnswer: "Norway",
       },
@@ -132,7 +132,7 @@ export const geographyQuestions: QuestionsPack = {
       {
         id: 9,
         question: "Which flag is shown in the image?",
-        image: "flag_argentina.jpg",
+        image: "/quiz/geography/moderate-q9.png",
         answers: ["Argentina", "Uruguay", "Paraguay", "Chile"],
         correctAnswer: "Argentina",
       },
@@ -171,7 +171,7 @@ export const geographyQuestions: QuestionsPack = {
       {
         id: 4,
         question: "Which country is shown in the image?",
-        image: "country_shape_sri_lanka.jpg",
+        image: "/quiz/geography/pro-q4.png",
         answers: ["Sri Lanka", "Madagascar", "Cyprus", "Malta"],
         correctAnswer: "Sri Lanka",
       },
@@ -197,7 +197,7 @@ export const geographyQuestions: QuestionsPack = {
       {
         id: 8,
         question: "Which city is shown in the image?",
-        image: "city_istanbul_bosphorus.jpg",
+        image: "/quiz/geography/pro-q8.png",
         answers: ["Istanbul", "Athens", "Rome", "Lisbon"],
         correctAnswer: "Istanbul",
       },
@@ -208,7 +208,7 @@ export const geographyQuestions: QuestionsPack = {
           "Mariana Trench",
           "Tonga Trench",
           "Japan Trench",
-          "Peru–Chile Trench",
+          "Peru-Chile Trench",
         ],
         correctAnswer: "Mariana Trench",
       },
