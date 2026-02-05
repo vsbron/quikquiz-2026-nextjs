@@ -3,58 +3,65 @@ import { useState } from "react";
 import Button from "@/components/ui/Button";
 import { useRouter } from "next/navigation";
 
+// Props interface
 interface QuizEndProps {
   answers: string[];
   category: string;
-  difficulty: string;
+  difficulty: "casual" | "moderate" | "pro";
 }
 
+// The component
 function QuizEnd({ answers, category, difficulty }: QuizEndProps) {
   // Create state value for submitting state and get the router
   const [isCalculating, setIsCalculating] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const router = useRouter();
 
   // Finish the quiz handler
   const resultsHandler = async () => {
     try {
-      // Enable calculating state
+      // Reset error and enable calculating state
+      setError(null);
       setIsCalculating(true);
 
       // Fetch the results
-      const res = await fetch(`/api/results/${category}`, {
+      const res = await fetch(`/api/results/`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ category, answers, difficulty }),
       });
 
       // Guard clause
-      if (!res.ok) throw new Error("Failed to calculate results");
+      if (!res.ok) {
+        const text = await res.text().catch(() => "");
+        throw new Error(text || "Failed to calculate results");
+      }
 
       // Extract the data
       const data = (await res.json()) as {
         score: number;
         total: number;
+        correctCount: number;
+        quizName: string;
       };
 
       // Store results in sessionStorage
       sessionStorage.setItem(
         "quizResults",
         JSON.stringify({
-          category,
           difficulty,
           ...data,
         }),
       );
 
       // Redirect the user
-      router.push(`/results/`);
+      router.push(`/results`);
     } catch (e: unknown) {
-      throw new Error(
-        `Failed to calculate the results. (${e instanceof Error ? e.message : e})`,
-      );
-    } finally {
       // Disable calculating state
       setIsCalculating(false);
+
+      // Set error
+      setError(e instanceof Error ? e.message : String(e));
     }
   };
 
@@ -71,9 +78,9 @@ function QuizEnd({ answers, category, difficulty }: QuizEndProps) {
         You&apos;re all set! Click the button below to calculate your final
         score and see an overall summary of your performance in the quiz.
       </p>
+      {error && <p className="mt-3 text-red-500">{error}</p>}
       <Button
         small
-        asChild
         className="mt-5"
         onClick={resultsHandler}
         disabled={isCalculating}

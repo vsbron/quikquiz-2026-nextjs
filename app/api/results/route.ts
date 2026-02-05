@@ -23,32 +23,37 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Category not found" }, { status: 404 });
   }
 
-  // Get the correct answers and set the multiplier
+  // Get the correct answers
   const questions = questionsPack.difficulties[difficulty];
   const quizName = questionsPack.title;
-  const correctAnswers = questions.map((q) => q.correctAnswer);
-  let multiplier;
-  switch (difficulty) {
-    case "casual":
-      multiplier = MULTIPLIER_CASUAL;
-    case "moderate":
-      multiplier = MULTIPLIER_MODERATE;
-    case "pro":
-      multiplier = MULTIPLIER_PRO;
-    default:
-      multiplier = MULTIPLIER_CASUAL;
+
+  // Check if we have correct length of answers
+  if (!Array.isArray(answers) || answers.length !== questions.length) {
+    return NextResponse.json(
+      { error: "Invalid answers payload" },
+      { status: 400 },
+    );
   }
 
-  // Calculate the score
-  const score = correctAnswers.reduce((sum, correct, i) => {
-    return sum + (answers[i] === correct ? 1 * multiplier : 0);
+  // Set the multiplier
+  const multiplierByDifficulty = {
+    casual: MULTIPLIER_CASUAL,
+    moderate: MULTIPLIER_MODERATE,
+    pro: MULTIPLIER_PRO,
+  } as const;
+  const multiplier = multiplierByDifficulty[difficulty];
+
+  // Calculate the score and number of correct answers
+  const correctCount = questions.reduce((sum, q, i) => {
+    return sum + (answers[i] === q.correctAnswer ? 1 : 0);
   }, 0);
+  const score = correctCount * multiplier;
 
   // Return the response
   return NextResponse.json({
     score,
-    total: score / multiplier,
-    category: quizName,
-    difficulty,
+    total: questions.length,
+    correctCount,
+    quizName,
   });
 }

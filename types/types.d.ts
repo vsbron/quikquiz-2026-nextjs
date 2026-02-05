@@ -16,8 +16,9 @@ type Question = {
 };
 
 type QuizResults = {
-  category: string;
+  quizName: string;
   difficulty: string;
   score: number;
   total: number;
+  correctCount: number;
 };
