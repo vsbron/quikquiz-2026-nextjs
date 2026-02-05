@@ -5,7 +5,8 @@ import { LINKS } from "@/utils/constants";
 
 function ResultsSection({ results }: { results: QuizResults }) {
   // Destructure results
-  const { score, total, correctCount, quizName, difficulty } = results;
+  const { score, total, correctCount, quizName, difficulty, wrongQuestions } =
+    results;
 
   // Returned JSX
   return (
@@ -17,6 +18,11 @@ function ResultsSection({ results }: { results: QuizResults }) {
       <p>
         You answered correctly on {correctCount} out of {total} questions
       </p>
+      <div>
+        {wrongQuestions.map((wQ) => (
+          <div key={wQ}>{wQ}</div>
+        ))}
+      </div>
       <Button asChild>
         <Link href={LINKS.HOME}>Home</Link>
       </Button>

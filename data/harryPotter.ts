@@ -259,14 +259,14 @@ export const harryPotterQuestions: QuestionsPack = {
       {
         id: 5,
         question:
-          "In the books, who is the Slytherin student that openly supports Harry during the final book?",
+          "In the books, what happens to Mad-Eye Moody's magical eye after his death?",
         answers: [
-          "Theodore Nott",
-          "Blaise Zabini",
-          "Millicent Bulstrode",
-          "Daphne Greengrass",
+          "It's buried with him by the Order as a sign of respect",
+          "Umbridge puts it on her office door",
+          "Voldemort keeps it as a trophy in Malfoy Manor",
+          "Mundungus Fletcher sells it in Knockturn Alley",
         ],
-        correctAnswer: "Theodore Nott",
+        correctAnswer: "Umbridge puts it on her office door",
       },
       {
         id: 6,
@@ -276,8 +276,7 @@ export const harryPotterQuestions: QuestionsPack = {
       },
       {
         id: 7,
-        question:
-          "Hard movie question: Which Horcrux does Ron destroy in the films?",
+        question: "Which Horcrux does Ron destroy in the films?",
         answers: [
           "Slytherin's locket",
           "Ravenclaw's diadem",
@@ -301,7 +300,7 @@ export const harryPotterQuestions: QuestionsPack = {
       {
         id: 9,
         question:
-          "Hard movie question: In the films, what memory does Slughorn alter and later give to Harry?",
+          "In the films, what memory does Slughorn alter and later give to Harry?",
         answers: [
           "The Horcrux conversation with Tom Riddle",
           "The prophecy about Harry",

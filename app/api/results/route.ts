@@ -23,8 +23,14 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Category not found" }, { status: 404 });
   }
 
-  // Get the correct answers
+  // Get the correct answers (while checking difficulty)
   const questions = questionsPack.difficulties[difficulty];
+  if (!questions) {
+    return NextResponse.json(
+      { error: "Invalid difficulty for this category" },
+      { status: 400 },
+    );
+  }
   const quizName = questionsPack.title;
 
   // Check if we have correct length of answers
@@ -43,10 +49,14 @@ export async function POST(req: Request) {
   } as const;
   const multiplier = multiplierByDifficulty[difficulty];
 
+  // Get the wrong questions
+  const wrongQuestions = questions.reduce<string[]>((arr, q, i) => {
+    if (answers[i] !== q.correctAnswer) arr.push(`#${q.id}: ${q.question}`);
+    return arr;
+  }, []);
+
   // Calculate the score and number of correct answers
-  const correctCount = questions.reduce((sum, q, i) => {
-    return sum + (answers[i] === q.correctAnswer ? 1 : 0);
-  }, 0);
+  const correctCount = questions.length - wrongQuestions.length;
   const score = correctCount * multiplier;
 
   // Return the response
@@ -55,5 +65,6 @@ export async function POST(req: Request) {
     total: questions.length,
     correctCount,
     quizName,
+    wrongQuestions,
   });
 }

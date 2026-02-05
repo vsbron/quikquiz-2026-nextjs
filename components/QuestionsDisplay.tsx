@@ -4,6 +4,11 @@ import QuizEnd from "@/components/QuizEnd";
 import QuestionCard from "@/components/QuestionCard";
 
 import { shuffleAnswers } from "@/utils/helpers";
+import {
+  MULTIPLIER_CASUAL,
+  MULTIPLIER_MODERATE,
+  MULTIPLIER_PRO,
+} from "@/utils/constants";
 
 // Props interface
 interface QuestionsDisplayProps {
@@ -44,6 +49,19 @@ function QuestionsDisplay({
       />
     );
 
+  let multiplier;
+  switch (difficulty) {
+    case "casual":
+      multiplier = MULTIPLIER_CASUAL;
+      break;
+    case "moderate":
+      multiplier = MULTIPLIER_MODERATE;
+      break;
+    case "pro":
+      multiplier = MULTIPLIER_PRO;
+      break;
+  }
+
   // Returned JSX
   return (
     <div className="relative w-full mx-auto">
@@ -52,7 +70,10 @@ function QuestionsDisplay({
           Question: {currentIndex + 1}/{shuffledQuestions.length}
         </span>
         <span className="max-sm:hidden">|</span>
-        <span className="capitalize">Difficulty: {difficulty}</span>
+        <span className="capitalize">
+          Difficulty: {difficulty} (
+          <span className="normal-case">Score multiplier: x{multiplier}</span>)
+        </span>
       </div>
       <div className="overflow-hidden -mx-3">
         <div

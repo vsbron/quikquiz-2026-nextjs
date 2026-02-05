@@ -21,4 +21,5 @@ type QuizResults = {
   score: number;
   total: number;
   correctCount: number;
+  wrongQuestions: string[];
 };
