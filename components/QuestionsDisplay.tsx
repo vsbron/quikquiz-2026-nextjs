@@ -8,7 +8,7 @@ import { shuffleAnswers } from "@/utils/helpers";
 // Props interface
 interface QuestionsDisplayProps {
   questions: Question[];
-  difficulty: string;
+  difficulty: Difficulty;
   category: string;
 }
 

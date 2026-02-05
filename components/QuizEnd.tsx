@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 interface QuizEndProps {
   answers: string[];
   category: string;
-  difficulty: "casual" | "moderate" | "pro";
+  difficulty: Difficulty;
 }
 
 // The component

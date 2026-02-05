@@ -12,7 +12,7 @@ export async function POST(req: Request) {
   const { category, answers, difficulty } = (await req.json()) as {
     category: string;
     answers: string[];
-    difficulty: "casual" | "moderate" | "pro";
+    difficulty: Difficulty;
   };
 
   // Find the pack inside categories and pull the answers
