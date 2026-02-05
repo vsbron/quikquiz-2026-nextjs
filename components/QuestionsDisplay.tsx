@@ -23,9 +23,10 @@ function QuestionsDisplay({
   category,
   difficulty,
 }: QuestionsDisplayProps) {
-  // Set state value for current question and selected answers
+  // Set state value for current question, selected answers and locked state
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<string[]>([]);
+  const [isLocked, setIsLocked] = useState(false);
 
   // Shuffle the answers
   const shuffledQuestions = useMemo(
@@ -35,8 +36,10 @@ function QuestionsDisplay({
 
   // Selecting an answer handler
   const submitAnswer = (answer: string) => {
+    setIsLocked(true);
     setSelectedAnswers((curAnswers) => [...curAnswers, answer]);
     setCurrentIndex((i) => i + 1);
+    setTimeout(() => setIsLocked(false), 700);
   };
 
   // Conditional return if the quiz is completed
@@ -49,6 +52,7 @@ function QuestionsDisplay({
       />
     );
 
+  // Define multiplier
   let multiplier;
   switch (difficulty) {
     case "casual":
@@ -86,6 +90,7 @@ function QuestionsDisplay({
               curQuestion={q}
               index={currentIndex}
               submitHandler={submitAnswer}
+              disableButtons={isLocked}
             />
           ))}
         </div>

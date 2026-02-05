@@ -6,6 +6,7 @@ interface QuestionCardProps {
   curQuestion: Question;
   index: number;
   submitHandler: (answer: string) => void;
+  disableButtons: boolean;
 }
 
 // The component
@@ -13,6 +14,7 @@ function QuestionCard({
   curQuestion,
   index,
   submitHandler,
+  disableButtons,
 }: QuestionCardProps) {
   // Destructure the question
   const { id, question, image, answers } = curQuestion;
@@ -45,7 +47,12 @@ function QuestionCard({
 
       <div className="grid grid-cols-2 gap-4 content-stretch justify-stretch items-stretch">
         {answers.map((answer) => (
-          <Button key={answer} small onClick={() => submitHandler(answer)}>
+          <Button
+            key={answer}
+            small
+            onClick={() => submitHandler(answer)}
+            disabled={disableButtons}
+          >
             {answer}
           </Button>
         ))}
