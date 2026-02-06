@@ -19,7 +19,7 @@ interface ShareProps {
 function Share({ ref, score, quizName, difficulty }: ShareProps) {
   // Prepare some data
   const url = encodeURIComponent(
-    `${process.env.NEXT_PUBLIC_DOMAIN}/${LINKS.CATEGORIES}`,
+    `${process.env.NEXT_PUBLIC_DOMAIN}${LINKS.CATEGORIES}`,
   );
   const title = encodeURIComponent(
     `Hey! I scored ${score} points in ${quizName} quiz on ${difficulty} difficulty. Can you beat my score?`,
