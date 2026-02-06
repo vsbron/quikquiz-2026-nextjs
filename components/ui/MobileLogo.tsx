@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-
 import { APP_NAME, LINKS } from "@/utils/constants";
 
 function MobileLogo() {

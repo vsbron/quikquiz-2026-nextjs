@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 import SectionTitle from "@/components/ui/SectionTitle";
 import { LINKS } from "@/utils/constants";
 

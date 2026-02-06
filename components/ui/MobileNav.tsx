@@ -1,16 +1,18 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Dispatch, SetStateAction } from "react";
+
+import { APP_NAME } from "@/utils/constants";
+import { nav } from "@/utils/nav";
 import { CodeBracketSquareIcon } from "@heroicons/react/24/solid";
 
-import { nav } from "@/utils/nav";
-import Image from "next/image";
-import { APP_NAME } from "@/utils/constants";
-
+// Props interface
 interface MobileNavProps {
   isMenuOpen: boolean;
   setIsMenuOpen: Dispatch<SetStateAction<boolean>>;
 }
 
+// The component
 function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
   // Returned JSX
   return (

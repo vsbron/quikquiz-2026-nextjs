@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-
 import MobileNav from "@/components/ui/MobileNav";
 
 function Hamburger() {
@@ -25,9 +24,11 @@ function Hamburger() {
       }
     };
 
+    // Add listeners
     document.addEventListener("mousedown", onPointerDown);
     document.addEventListener("touchstart", onPointerDown, { passive: true });
 
+    // Cleanup function
     return () => {
       document.removeEventListener("mousedown", onPointerDown);
       document.removeEventListener("touchstart", onPointerDown);

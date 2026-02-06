@@ -1,8 +1,6 @@
 "use client";
 import { usePathname } from "next/navigation";
-
 import Tab from "@/components/ui/Tab";
-
 import { nav } from "@/utils/nav";
 
 function EmptyTabs() {

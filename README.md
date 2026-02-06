@@ -110,6 +110,12 @@ The project includes dynamic routing, API-driven quiz loading, server-side resul
 - Donut chart visualization of correct vs wrong answers (Chart.js)
 - List of questions answered incorrectly
 - Results are pulled from session storage and cleared immediately
+- Includes quick-share buttons:
+  - Telegram
+  - WhatsApp
+  - Reddit
+  - X (Twitter)
+- Includes a Download button to save the results as an image (screenshot export)
 - Includes options to retry the quiz or pick another category
 
 ---

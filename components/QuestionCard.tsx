@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Button from "@/components/ui/Button";
 
-// Props type
+// Props interface
 interface QuestionCardProps {
   curQuestion: Question;
   index: number;

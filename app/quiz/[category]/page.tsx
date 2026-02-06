@@ -1,5 +1,6 @@
-import QuizSection from "@/components/QuizSection";
 import { notFound } from "next/navigation";
+
+import QuizSection from "@/components/QuizSection";
 
 // Props interface
 interface QuestionsPageProps {

@@ -1,7 +1,7 @@
 import EmptyTabs from "@/components/ui/EmptyTabs";
+import Hamburger from "@/components/ui/Hamburger";
 import LogoTab from "@/components/ui/LogoTab";
 import MobileLogo from "@/components/ui/MobileLogo";
-import Hamburger from "./ui/Hamburger";
 
 function Header() {
   // Returned JSX

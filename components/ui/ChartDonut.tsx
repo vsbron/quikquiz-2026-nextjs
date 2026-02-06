@@ -23,6 +23,7 @@ function ChartDonut({ correct, wrong }: ChartDonutProps) {
   const total = correct + wrong;
   const percentage = total > 0 ? Math.round((correct / total) * 100) : 0;
 
+  // Set the results message
   let message = "";
   switch (true) {
     case percentage === 100:
