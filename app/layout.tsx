@@ -36,7 +36,7 @@ export default function RootLayout({
         <div className="w-full sm:w-150 md:w-180 lg:w-240 xl:w-300 mx-auto sm:mt-10 sm:mb-10 lg:mt-14">
           <Header />
           <Wrapper>
-            <div className="pt-4 sm:pt-10 pb-8 sm:pb-16 px-5 sm:px-12 sm:min-h-[70dvh] flex-center items-stretch! flex-col">
+            <div className="pt-4 sm:pt-10 pb-8 sm:pb-16 px-5 sm:px-12 sm:min-h-[70dvh] portrait:min-h-0 xl:min-h-125 flex-center items-stretch! flex-col">
               {children}
             </div>
             <Footer />

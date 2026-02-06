@@ -42,7 +42,7 @@ export async function POST(req: Request) {
 
   // Get the wrong questions
   const wrongQuestions = questions.reduce<string[]>((arr, q, i) => {
-    if (answers[i] !== q.correctAnswer) arr.push(`#${q.id}: ${q.question}`);
+    if (answers[i] !== q.correctAnswer) arr.push(q.question);
     return arr;
   }, []);
 

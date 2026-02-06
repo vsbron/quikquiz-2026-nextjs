@@ -5,8 +5,12 @@ import SectionTitle from "@/components/ui/SectionTitle";
 
 import { LINKS } from "@/utils/constants";
 import { getMultiplier } from "@/utils/helpers";
+import { useRouter } from "next/navigation";
 
 function ResultsSection({ results }: { results: QuizResults }) {
+  // Get the router
+  const router = useRouter();
+
   // Destructure results
   const { score, total, correctCount, quizName, difficulty, wrongQuestions } =
     results;
@@ -22,36 +26,49 @@ function ResultsSection({ results }: { results: QuizResults }) {
         {quizName} (<span className="capitalize">{difficulty}</span>)
       </h2>
       <p className="text-center">
-        Your score is: <b className="text-[18px] sm:text-[20px]">{score}</b> (
-        {correctCount} x {multiplier} multiplier)
+        Your score is: <b className="text-[18px] sm:text-[20px]">{score}</b>
+        <span className="text-[15px] block -mt-0.5">
+          ({correctCount} x {multiplier} multiplier)
+        </span>
       </p>
 
       {/* Chart donut */}
-      <div className="mb-4">
+      <div className="mb-8">
         <ChartDonut correct={correctCount} wrong={total - correctCount} />
       </div>
 
-      {/* List of wrong questions */}
-      {wrongQuestions.length > 0 && (
-        <div className="mb-8 text-[15px]">
-          <h3 className="font-bold mb-1 text-[18px]">
-            Questions you answered wrong:
-          </h3>
-          <div className="flex flex-col gap-1">
-            {wrongQuestions.map((question, i) => (
-              <div key={i}>{question}</div>
-            ))}
+      <div className="max-w-132 mx-auto">
+        {/* List of wrong questions */}
+        {wrongQuestions.length > 0 && (
+          <div className="mb-8 text-[15px]">
+            <h3 className="font-bold mb-1 text-[18px]">
+              Questions you answered wrong:
+            </h3>
+            <div className="flex flex-col gap-1">
+              {wrongQuestions.map((question, i) => (
+                <div key={i} className="grid grid-cols-[25px_1fr] gap-2">
+                  <span>{`#${i + 1}:`}</span>
+                  <span>{question}</span>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      )}
+        )}
 
-      {/* Final notes */}
-      <p>
-        Thanks for playing! Try{" "}
-        <Link href={LINKS.CATEGORIES}>another category</Link> to expand your
-        knowledge - or return to the <Link href={LINKS.HOME}>homepage</Link> and
-        start a new quiz anytime.
-      </p>
+        {/* Final notes */}
+        <p>
+          Thanks for playing! Think you can do better?{" "}
+          <span
+            className="text-accent cursor-pointer"
+            onClick={() => router.back()}
+          >
+            Try again
+          </span>{" "}
+          and go for a perfect score - or jump into{" "}
+          <Link href={LINKS.CATEGORIES}>another category</Link> and keep the
+          streak going.
+        </p>
+      </div>
     </section>
   );
 }
