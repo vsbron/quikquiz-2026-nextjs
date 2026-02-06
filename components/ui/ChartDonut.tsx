@@ -93,15 +93,15 @@ function ChartDonut({ correct, wrong }: ChartDonutProps) {
       </div>
       <div className="flex justify-between text-center mt-2">
         <div>
-          <div className="text-[12px] opacity-75">Correct</div>
+          <div className="text-[14px] opacity-75">Correct</div>
           <div className="text-[20px] font-bold">{correct}</div>
         </div>
         <div>
-          <div className="text-[12px] opacity-75">Wrong</div>
+          <div className="text-[14px] opacity-75">Wrong</div>
           <div className="text-[20px] font-bold">{wrong}</div>
         </div>
         <div>
-          <div className="text-[12px] opacity-75">Total</div>
+          <div className="text-[14px] opacity-75">Total</div>
           <div className="text-[20px] font-bold">{total}</div>
         </div>
       </div>
