@@ -28,6 +28,7 @@ export async function POST(req: Request) {
     );
   }
   const quizName = questionsPack.title;
+  const quizSlug = questionsPack.slug;
 
   // Check if we have correct length of answers
   if (!Array.isArray(answers) || answers.length !== questions.length) {
@@ -56,6 +57,7 @@ export async function POST(req: Request) {
     total: questions.length,
     correctCount,
     quizName,
+    quizSlug,
     wrongQuestions,
   });
 }

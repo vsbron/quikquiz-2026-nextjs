@@ -15,8 +15,15 @@ function ResultsSection({ results }: { results: QuizResults }) {
   const shareRef = useRef<HTMLDivElement>(null);
 
   // Destructure results
-  const { score, total, correctCount, quizName, difficulty, wrongQuestions } =
-    results;
+  const {
+    score,
+    total,
+    correctCount,
+    quizName,
+    quizSlug,
+    difficulty,
+    wrongQuestions,
+  } = results;
 
   // Get the multiplier
   const multiplier = getMultiplier(difficulty);
@@ -49,6 +56,7 @@ function ResultsSection({ results }: { results: QuizResults }) {
         ref={shareRef}
         score={score}
         quizName={quizName}
+        quizSlug={quizSlug}
         difficulty={difficulty}
       />
 
@@ -73,13 +81,8 @@ function ResultsSection({ results }: { results: QuizResults }) {
         {/* Final notes */}
         <p>
           Thanks for playing! Think you can do better?{" "}
-          <span
-            className="text-accent cursor-pointer"
-            onClick={() => router.back()}
-          >
-            Try again
-          </span>{" "}
-          and go for a perfect score - or jump into{" "}
+          <Link href={`${LINKS.CATEGORIES}/${quizSlug}`}>Try again</Link> and go
+          for a perfect score - or jump into{" "}
           <Link href={LINKS.CATEGORIES}>another category</Link> and keep the
           streak going.
         </p>

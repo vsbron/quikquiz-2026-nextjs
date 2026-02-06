@@ -12,14 +12,15 @@ interface ShareProps {
   ref: RefObject<HTMLDivElement | null>;
   score: number;
   quizName: string;
+  quizSlug: string;
   difficulty: Difficulty;
 }
 
 // The component
-function Share({ ref, score, quizName, difficulty }: ShareProps) {
+function Share({ ref, score, quizName, quizSlug, difficulty }: ShareProps) {
   // Prepare some data
   const url = encodeURIComponent(
-    `${process.env.NEXT_PUBLIC_DOMAIN}${LINKS.CATEGORIES}`,
+    `${process.env.NEXT_PUBLIC_DOMAIN}${LINKS.CATEGORIES}/${quizSlug}`,
   );
   const title = encodeURIComponent(
     `Hey! I scored ${score} points in ${quizName} quiz on ${difficulty} difficulty. Can you beat my score?`,
