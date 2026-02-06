@@ -5,7 +5,12 @@ import ExternalLink from "@/components/ExternalLink";
 
 import { LINKS } from "@/utils/constants";
 import { FaDownload } from "react-icons/fa";
-import { RiTelegram2Fill, RiWhatsappFill } from "react-icons/ri";
+import {
+  RiRedditLine,
+  RiTelegram2Fill,
+  RiTwitterXFill,
+  RiWhatsappFill,
+} from "react-icons/ri";
 
 // Props interface
 interface ShareProps {
@@ -47,8 +52,8 @@ function Share({ ref, score, quizName, quizSlug, difficulty }: ShareProps) {
 
   // Returned JSX
   return (
-    <div className="text-center mt-1 mb-8 mx-auto text-lg sm:text-xl bg-white pt-2 pb-4 border border-chocolate rounded-xl max-w-60">
-      <h4 className="mb-1">Share your results</h4>
+    <div className="text-center mt-1 mb-8 mx-auto text-lg sm:text-xl bg-white pt-3 pb-4 border border-chocolate rounded-xl max-w-64">
+      <h4 className="mb-1.5">Share your results</h4>
       <div className="flex justify-center gap-5">
         <FaDownload
           onClick={handleDownload}
@@ -61,6 +66,17 @@ function Share({ ref, score, quizName, quizSlug, difficulty }: ShareProps) {
           url={`https://api.whatsapp.com/send?text=${url}%20${title}`}
         >
           <RiWhatsappFill className="w-6 h-6 fill-chocolate hover:fill-[#25D366] transition-colors" />
+        </ExternalLink>
+        <ExternalLink
+          url={`https://twitter.com/intent/tweet?url=${url}&text=${title}`}
+        >
+          <RiTwitterXFill className="w-6 h-6 fill-chocolate hover:fill-[#1DA1F2] transition-colors" />
+        </ExternalLink>
+
+        <ExternalLink
+          url={`https://www.reddit.com/submit?url=${url}&title=${title}&resubmit=true`}
+        >
+          <RiRedditLine className="w-6 h-6 fill-chocolate hover:fill-[#FF4500] transition-colors" />
         </ExternalLink>
       </div>
     </div>
