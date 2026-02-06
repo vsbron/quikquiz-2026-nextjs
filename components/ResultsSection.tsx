@@ -1,34 +1,57 @@
 import Link from "next/link";
-import SectionTitle from "./ui/SectionTitle";
-import Button from "./ui/Button";
+
+import ChartDonut from "@/components/ui/ChartDonut";
+import SectionTitle from "@/components/ui/SectionTitle";
+
 import { LINKS } from "@/utils/constants";
+import { getMultiplier } from "@/utils/helpers";
 
 function ResultsSection({ results }: { results: QuizResults }) {
   // Destructure results
   const { score, total, correctCount, quizName, difficulty, wrongQuestions } =
     results;
 
+  // Get the multiplier
+  const multiplier = getMultiplier(difficulty);
+
   // Returned JSX
   return (
     <section>
       <SectionTitle className="mb-3!">Quiz results</SectionTitle>
-      <h2>Category: {quizName}</h2>
-      <h3 className="capitalize">Difficulty: {difficulty}</h3>
-      <p>Your score is: {score}</p>
-      <p>
-        You answered correctly on {correctCount} out of {total} questions
+      <h2 className="text-center text-xl sm:text-2xl font-bold font-merriweather mb-2">
+        {quizName} (<span className="capitalize">{difficulty}</span>)
+      </h2>
+      <p className="text-center">
+        Your score is: <b className="text-[18px] sm:text-[20px]">{score}</b> (
+        {correctCount} x {multiplier} multiplier)
       </p>
-      <div>
-        {wrongQuestions.map((wQ) => (
-          <div key={wQ}>{wQ}</div>
-        ))}
+
+      {/* Chart donut */}
+      <div className="mb-4">
+        <ChartDonut correct={correctCount} wrong={total - correctCount} />
       </div>
-      <Button asChild>
-        <Link href={LINKS.HOME}>Home</Link>
-      </Button>
-      <Button asChild>
-        <Link href={LINKS.CATEGORIES}>Categories</Link>
-      </Button>
+
+      {/* List of wrong questions */}
+      {wrongQuestions.length > 0 && (
+        <div className="mb-8 text-[15px]">
+          <h3 className="font-bold mb-1 text-[18px]">
+            Questions you answered wrong:
+          </h3>
+          <div className="flex flex-col gap-1">
+            {wrongQuestions.map((question, i) => (
+              <div key={i}>{question}</div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Final notes */}
+      <p>
+        Thanks for playing! Try{" "}
+        <Link href={LINKS.CATEGORIES}>another category</Link> to expand your
+        knowledge - or return to the <Link href={LINKS.HOME}>homepage</Link> and
+        start a new quiz anytime.
+      </p>
     </section>
   );
 }

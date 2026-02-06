@@ -1,11 +1,7 @@
 import { NextResponse } from "next/server";
 
 import { CATEGORIES } from "@/data/categories";
-import {
-  MULTIPLIER_CASUAL,
-  MULTIPLIER_MODERATE,
-  MULTIPLIER_PRO,
-} from "@/utils/constants";
+import { getMultiplier } from "@/utils/helpers";
 
 export async function POST(req: Request) {
   // Get the request data
@@ -41,13 +37,8 @@ export async function POST(req: Request) {
     );
   }
 
-  // Set the multiplier
-  const multiplierByDifficulty = {
-    casual: MULTIPLIER_CASUAL,
-    moderate: MULTIPLIER_MODERATE,
-    pro: MULTIPLIER_PRO,
-  } as const;
-  const multiplier = multiplierByDifficulty[difficulty];
+  // Get the multiplier
+  const multiplier = getMultiplier(difficulty);
 
   // Get the wrong questions
   const wrongQuestions = questions.reduce<string[]>((arr, q, i) => {
