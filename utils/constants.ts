@@ -1,10 +1,11 @@
 export const APP_NAME = "QuikQuiz";
 export const LINKS = {
   HOME: "/",
-  CATEGORIES: "/quiz",
   HOW_TO_PLAY: "/how-to-play",
-  APP_INFO: "/app-info",
+  CATEGORIES: "/quiz",
   RANDOM_QUIZ: "/quiz/random",
+  RESULTS: "/results",
+  APP_INFO: "/app-info",
 };
 
 export const MULTIPLIER_CASUAL = 1;

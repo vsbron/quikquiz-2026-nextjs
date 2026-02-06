@@ -2,6 +2,7 @@
 import { usePathname } from "next/navigation";
 import Tab from "@/components/ui/Tab";
 import { nav } from "@/utils/nav";
+import { LINKS } from "@/utils/constants";
 
 function EmptyTabs() {
   // Get the current pathname
@@ -14,7 +15,7 @@ function EmptyTabs() {
   return (
     <div className="flex gap-1 max-lg:hidden">
       {/* Tabs that correspond the nav */}
-      {nav.slice(0, -1).map(({ url }) => {
+      {nav.slice(0, -2).map(({ url }) => {
         // Check if pathname fits the tab
         const isActive =
           url === "/" ? pathname === "/" : pathname.startsWith(url);
@@ -27,10 +28,12 @@ function EmptyTabs() {
           />
         );
       })}
-
-      {/* Additional tab for results (not in the nav) */}
+      {/* Additional tab for results and app info */}
       <Tab
-        className={`px-14 py-4 ${pathname.startsWith("/results") ? "bg-background" : inactiveClass}`}
+        className={`px-14 py-4 ${pathname.startsWith(LINKS.RESULTS) ? "bg-background" : inactiveClass}`}
+      />{" "}
+      <Tab
+        className={`px-14 py-4 ${pathname.startsWith(LINKS.APP_INFO) ? "bg-background" : inactiveClass}`}
       />
     </div>
   );
