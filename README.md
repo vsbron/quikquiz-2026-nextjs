@@ -17,6 +17,7 @@ The app is designed as a clean portfolio project with a real-world structure: qu
    - [Categories Page](#categories-page)
    - [Quiz Page](#quiz-page)
    - [Results Page](#results-page)
+   - [About Us Page](#about-us-page)
 4. [API Routes](#api-routes)
 5. [Technical Details](#technical-details)
 
@@ -117,6 +118,11 @@ The project includes dynamic routing, API-driven quiz loading, server-side resul
   - X (Twitter)
 - Includes a Download button to save the results as an image (screenshot export)
 - Includes options to retry the quiz or pick another category
+
+### App Info Page
+
+- Short overview of QuikQuiz and its core features
+- Highlights the project summary and tech stack
 
 ---
 

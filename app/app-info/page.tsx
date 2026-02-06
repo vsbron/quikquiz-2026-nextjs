@@ -1,6 +1,8 @@
-function AboutPage() {
+import AppInfoSection from "@/components/AppInfoSection";
+
+function AppInfoPage() {
   // Returned JSX
-  return <div>AboutPage</div>;
+  return <AppInfoSection />;
 }
 
-export default AboutPage;
+export default AppInfoPage;

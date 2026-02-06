@@ -5,12 +5,12 @@ import { APP_NAME } from "@/utils/constants";
 function Footer() {
   // Returned JSX
   return (
-    <footer className="px-12 py-4 border-t border-stone-300 flex justify-between text-[16px] items-center flex-col md:flex-row mt-auto">
-      <div className="flex flex-col gap-0.5 max-md:items-center">
+    <footer className="px-12 py-4 border-t border-stone-300 flex justify-between text-[16px] items-center flex-col lg:flex-row mt-auto">
+      <div className="flex flex-col gap-0.5 max-lg:items-center">
         <div className="max-sm:hidden">
           <Nav />
         </div>
-        <div className="text-[15px] max-md:text-center">
+        <div className="text-[15px] max-lg:text-center">
           Built by VSBroN as a{" "}
           <a
             href="https://github.com/vsbron/quikquiz-2026-nextjs"
@@ -21,8 +21,8 @@ function Footer() {
           </a>
         </div>
       </div>
-      <div className="flex items-end gap-0.5 md:flex-col">
-        <div className="hidden md:flex items-end gap-2 leading-4">
+      <div className="flex items-end gap-0.5 lg:flex-col">
+        <div className="hidden lg:flex items-end gap-2 leading-4">
           QuikQuiz{" "}
           <Image
             src="/logo.svg"

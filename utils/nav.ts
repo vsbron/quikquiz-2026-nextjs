@@ -1,10 +1,11 @@
+import { LINKS } from "@/utils/constants";
 import {
   HomeIcon,
+  InformationCircleIcon,
   QuestionMarkCircleIcon,
   Squares2X2Icon,
   SparklesIcon,
 } from "@heroicons/react/24/solid";
-import { LINKS } from "@/utils/constants";
 
 export const nav = [
   {
@@ -26,5 +27,10 @@ export const nav = [
     url: LINKS.RANDOM_QUIZ,
     label: "Random Quiz",
     icon: SparklesIcon,
+  },
+  {
+    url: LINKS.APP_INFO,
+    label: "App Info",
+    icon: InformationCircleIcon,
   },
 ];
