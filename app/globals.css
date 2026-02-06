@@ -68,9 +68,6 @@ section a {
 .flex-center {
   @apply flex items-center justify-center;
 }
-.flex-center--desk {
-  @apply sm:flex sm:items-center sm:justify-center;
-}
 .shadow-big {
   @apply sm:shadow-[15px_15px_0] shadow-chocolate/80;
 }

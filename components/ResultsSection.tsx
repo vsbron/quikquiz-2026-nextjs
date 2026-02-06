@@ -1,15 +1,18 @@
 import Link from "next/link";
+import { useRef } from "react";
+import { useRouter } from "next/navigation";
 
 import ChartDonut from "@/components/ui/ChartDonut";
 import SectionTitle from "@/components/ui/SectionTitle";
+import Share from "@/components/ui/Share";
 
 import { LINKS } from "@/utils/constants";
 import { getMultiplier } from "@/utils/helpers";
-import { useRouter } from "next/navigation";
 
 function ResultsSection({ results }: { results: QuizResults }) {
-  // Get the router
+  // Get the router and ref for results stats
   const router = useRouter();
+  const shareRef = useRef<HTMLDivElement>(null);
 
   // Destructure results
   const { score, total, correctCount, quizName, difficulty, wrongQuestions } =
@@ -22,20 +25,32 @@ function ResultsSection({ results }: { results: QuizResults }) {
   return (
     <section>
       <SectionTitle className="mb-3!">Quiz results</SectionTitle>
-      <h2 className="text-center text-xl sm:text-2xl font-bold font-merriweather mb-2">
-        {quizName} (<span className="capitalize">{difficulty}</span>)
-      </h2>
-      <p className="text-center">
-        Your score is: <b className="text-[18px] sm:text-[20px]">{score}</b>
-        <span className="text-[15px] block -mt-0.5">
-          ({correctCount} x {multiplier} multiplier)
-        </span>
-      </p>
+      <div className="flex-center">
+        <div className="pt-2 pb-4 px-8" ref={shareRef}>
+          <h2 className="text-center text-xl sm:text-2xl font-bold font-merriweather mb-2">
+            {quizName} (<span className="capitalize">{difficulty}</span>)
+          </h2>
+          <p className="text-center">
+            Your score is: <b className="text-[18px] sm:text-[20px]">{score}</b>
+            <span className="text-[15px] block -mt-0.5">
+              ({correctCount} x {multiplier} multiplier)
+            </span>
+          </p>
 
-      {/* Chart donut */}
-      <div className="mb-8">
-        <ChartDonut correct={correctCount} wrong={total - correctCount} />
+          {/* Chart donut */}
+          <div className="mb-2">
+            <ChartDonut correct={correctCount} wrong={total - correctCount} />
+          </div>
+        </div>
       </div>
+
+      {/* Share UI */}
+      <Share
+        ref={shareRef}
+        score={score}
+        quizName={quizName}
+        difficulty={difficulty}
+      />
 
       <div className="max-w-132 mx-auto">
         {/* List of wrong questions */}
