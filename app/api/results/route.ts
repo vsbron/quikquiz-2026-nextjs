@@ -42,10 +42,14 @@ export async function POST(req: Request) {
   const multiplier = getMultiplier(difficulty);
 
   // Get the wrong questions
-  const wrongQuestions = questions.reduce<string[]>((arr, q, i) => {
-    if (answers[i] !== q.correctAnswer) arr.push(q.question);
-    return arr;
-  }, []);
+  const wrongQuestions = questions.reduce<{ id: number; question: string }[]>(
+    (arr, q, i) => {
+      if (answers[i] !== q.correctAnswer)
+        arr.push({ id: q.id, question: q.question });
+      return arr;
+    },
+    [],
+  );
 
   // Calculate the score and number of correct answers
   const correctCount = questions.length - wrongQuestions.length;

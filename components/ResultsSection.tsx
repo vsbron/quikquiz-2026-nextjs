@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { useRef } from "react";
-import { useRouter } from "next/navigation";
 
 import ChartDonut from "@/components/ui/ChartDonut";
 import SectionTitle from "@/components/ui/SectionTitle";
@@ -10,8 +9,7 @@ import { LINKS } from "@/utils/constants";
 import { getMultiplier } from "@/utils/helpers";
 
 function ResultsSection({ results }: { results: QuizResults }) {
-  // Get the router and ref for results stats
-  const router = useRouter();
+  // Get ref for results stats
   const shareRef = useRef<HTMLDivElement>(null);
 
   // Destructure results
@@ -68,9 +66,9 @@ function ResultsSection({ results }: { results: QuizResults }) {
               Questions you answered wrong:
             </h3>
             <div className="flex flex-col gap-1">
-              {wrongQuestions.map((question, i) => (
-                <div key={i} className="grid grid-cols-[25px_1fr] gap-2">
-                  <span>{`#${i + 1}:`}</span>
+              {wrongQuestions.map(({ id, question }) => (
+                <div key={id} className="grid grid-cols-[25px_1fr] gap-2">
+                  <span>{`#${id}:`}</span>
                   <span>{question}</span>
                 </div>
               ))}

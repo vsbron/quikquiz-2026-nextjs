@@ -3,12 +3,7 @@ import { useMemo, useState } from "react";
 import QuizEnd from "@/components/QuizEnd";
 import QuestionCard from "@/components/QuestionCard";
 
-import { shuffleAnswers } from "@/utils/helpers";
-import {
-  MULTIPLIER_CASUAL,
-  MULTIPLIER_MODERATE,
-  MULTIPLIER_PRO,
-} from "@/utils/constants";
+import { getMultiplier, shuffleAnswers } from "@/utils/helpers";
 
 // Props interface
 interface QuestionsDisplayProps {
@@ -53,18 +48,7 @@ function QuestionsDisplay({
     );
 
   // Define multiplier
-  let multiplier;
-  switch (difficulty) {
-    case "casual":
-      multiplier = MULTIPLIER_CASUAL;
-      break;
-    case "moderate":
-      multiplier = MULTIPLIER_MODERATE;
-      break;
-    case "pro":
-      multiplier = MULTIPLIER_PRO;
-      break;
-  }
+  const multiplier = getMultiplier(difficulty);
 
   // Returned JSX
   return (
