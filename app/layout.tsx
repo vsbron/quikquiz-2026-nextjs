@@ -11,16 +11,31 @@ import "./globals.css";
 const merriweather = Merriweather({
   variable: "--font-merriweather",
   weight: ["400"],
+  display: "swap",
+  preload: true,
 });
 const inter = Inter({
   variable: "--font-inter",
   weight: ["400", "700"],
+  display: "swap",
+  preload: true,
 });
 
 // Meta data
 export const metadata: Metadata = {
-  title: APP_NAME,
-  description: `Test your knowledge with ${APP_NAME} - a fun, interactive quiz app built with Next.js. Choose a category, answer questions, and see your results instantly.`,
+  metadataBase: new URL("https://vsbron-quikquiz-2026.vercel.app/"),
+  title: {
+    default: `${APP_NAME} - Test your knowledge`,
+    template: `%s | ${APP_NAME}`,
+  },
+  description:
+    "Challenge yourself with fun quizzes across multiple categories. Answer questions, track your score, and see results instantly.",
+  creator: "VSBroN",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  referrer: "origin-when-cross-origin",
 };
 
 export default function RootLayout({
