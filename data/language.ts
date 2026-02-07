@@ -37,7 +37,7 @@ export const languageQuestions: QuestionsPack = {
       {
         id: 5,
         question: "Which punctuation mark is shown in the image?",
-        image: "punctuation_semicolon.jpg", // ;
+        image: "/quiz/language/casual-q5.png",
         answers: ["Semicolon", "Colon", "Comma", "Apostrophe"],
         correctAnswer: "Semicolon",
       },
@@ -67,7 +67,7 @@ export const languageQuestions: QuestionsPack = {
       {
         id: 9,
         question: "Which word is shown in the image?",
-        image: "word_typo_misspell_receive.jpg", // image showing "receive"
+        image: "/quiz/language/casual-q9.png",
         answers: ["Receive", "Recieve", "Receeve", "Reseive"],
         correctAnswer: "Receive",
       },
@@ -122,7 +122,7 @@ export const languageQuestions: QuestionsPack = {
       {
         id: 5,
         question: "Which writing style is shown in the image?",
-        image: "writing_style_cursive.jpg", // cursive handwriting sample
+        image: "/quiz/language/moderate-q5.png",
         answers: ["Cursive", "Gothic", "Italic", "Calligraphy"],
         correctAnswer: "Cursive",
       },
@@ -145,16 +145,16 @@ export const languageQuestions: QuestionsPack = {
       },
       {
         id: 8,
-        question: `Which word is closest in meaning to "obsolete"?`,
-        answers: ["Outdated", "Popular", "Dangerous", "Accurate"],
-        correctAnswer: "Outdated",
+        question: "Which literary device is shown in the image?",
+        image: "/quiz/language/moderate-q8.png",
+        answers: ["Metaphor", "Simile", "Alliteration", "Hyperbole"],
+        correctAnswer: "Metaphor",
       },
       {
         id: 9,
-        question: "Which word in the image is the adverb?",
-        image: "parts_of_speech_quickly.jpg", // sentence highlighting "quickly"
-        answers: ["Quickly", "Quick", "Runner", "Run"],
-        correctAnswer: "Quickly",
+        question: `Which word is closest in meaning to "obsolete"?`,
+        answers: ["Outdated", "Popular", "Dangerous", "Accurate"],
+        correctAnswer: "Outdated",
       },
       {
         id: 10,
@@ -195,16 +195,16 @@ export const languageQuestions: QuestionsPack = {
       },
       {
         id: 4,
-        question: `Which word is formed by blending two words (like "brunch")?`,
-        answers: ["Portmanteau", "Epithet", "Anagram", "Homonym"],
-        correctAnswer: "Portmanteau",
+        question: "Which symbol is shown in the image?",
+        image: "/quiz/language/moderate-q4.png",
+        answers: ["Em dash", "Hyphen", "En dash", "Minus sign"],
+        correctAnswer: "Em dash",
       },
       {
         id: 5,
-        question: "Which symbol is shown in the image?",
-        image: "punctuation_em_dash.jpg", // —
-        answers: ["Em dash", "Hyphen", "En dash", "Minus sign"],
-        correctAnswer: "Em dash",
+        question: `Which word is formed by blending two words (like "brunch")?`,
+        answers: ["Portmanteau", "Epithet", "Anagram", "Homonym"],
+        correctAnswer: "Portmanteau",
       },
       {
         id: 6,

@@ -173,6 +173,14 @@ Returns:
 
 ---
 
+## License
+
+© 2026 BroN
+
+This repository is intended for portfolio/demo purposes. Permission is granted to view and run the project for personal evaluation. Reuse, redistribution, or commercial use is not permitted without written permission.
+
+---
+
 ## Live Version
 
 https://vsbron-quikquiz-2026.vercel.app/
