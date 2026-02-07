@@ -1,10 +1,18 @@
 "use client";
+import { Metadata } from "next";
 import { useEffect, useState } from "react";
 import { redirect, useRouter } from "next/navigation";
 
-import { LINKS } from "@/utils/constants";
+import { APP_NAME, LINKS } from "@/utils/constants";
 import ResultsSection from "@/components/ResultsSection";
 
+// Meta data
+export const metadata: Metadata = {
+  title: "Your Results",
+  description: `See how you did in ${APP_NAME} - your final score, correct vs wrong breakdown, and the questions you missed. Retry the quiz or try another category.`,
+};
+
+// The page
 function ResultsPage() {
   // Get the router
   const router = useRouter();
