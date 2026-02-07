@@ -1,8 +1,17 @@
-"use client";
 import Link from "next/link";
+import { Metadata } from "next";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { LINKS } from "@/utils/constants";
 
+// Meta data
+export const metadata: Metadata = {
+  title: "Page Not Found",
+  description:
+    "This page doesn't exist. Browse categories and start a new quiz.",
+  robots: { index: false, follow: true },
+};
+
+// The page
 function NotFoundPage() {
   // Returned JSX
   return (
