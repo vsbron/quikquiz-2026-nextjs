@@ -23,12 +23,12 @@ interface ShareProps {
 
 // The component
 function Share({ ref, score, quizName, quizSlug, difficulty }: ShareProps) {
-  // Prepare some data
+  // Prepare url and title for sharing
   const url = encodeURIComponent(
     `${process.env.NEXT_PUBLIC_DOMAIN}${LINKS.CATEGORIES}/${quizSlug}`,
   );
   const title = encodeURIComponent(
-    `Hey! I scored ${score} points in ${quizName} quiz on ${difficulty} difficulty. Can you beat my score?`,
+    `Hey! I scored ${score} points in the ${quizName} quiz on ${difficulty} difficulty at QuikQuiz. Can you beat my score?`,
   );
 
   // Download image handler
@@ -45,7 +45,7 @@ function Share({ ref, score, quizName, quizSlug, difficulty }: ShareProps) {
 
     // Create link object and execute it
     const link = document.createElement("a");
-    link.download = "quikquiz-results.png";
+    link.download = `quikquiz-results-${quizSlug}-${difficulty}.png`;
     link.href = dataUrl;
     link.click();
   };

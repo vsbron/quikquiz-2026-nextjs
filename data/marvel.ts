@@ -19,34 +19,34 @@ export const marvelQuestions: QuestionsPack = {
       },
       {
         id: 3,
+        question: "Who is shown in the image?",
+        image: "/quiz/marvel/casual-q3.png",
+        answers: ["Iron Man", "War Machine", "Ultron", "Vision"],
+        correctAnswer: "Iron Man",
+      },
+      {
+        id: 4,
         question: "Which Infinity Stone is located in the Tesseract?",
         answers: ["Mind Stone", "Space Stone", "Power Stone", "Time Stone"],
         correctAnswer: "Space Stone",
       },
       {
-        id: 4,
+        id: 5,
         question: "Who is Tony Stark's AI assistant in most of the MCU?",
         answers: ["JARVIS", "FRIDAY", "ULTRON", "EDITH"],
         correctAnswer: "JARVIS",
       },
       {
-        id: 5,
+        id: 6,
         question: `Which character says, "I can do this all day"?`,
         answers: ["Captain America", "Iron Man", "Falcon", "Winter Soldier"],
         correctAnswer: "Captain America",
       },
       {
-        id: 6,
+        id: 7,
         question: "Which city is primarily protected by Spider-Man in the MCU?",
         answers: ["New York City", "Chicago", "San Francisco", "Boston"],
         correctAnswer: "New York City",
-      },
-      {
-        id: 7,
-        question: "Who is shown in the image?",
-        image: "mcu_character_iron_man.jpg", // Iron Man suit / Tony Stark
-        answers: ["Iron Man", "War Machine", "Ultron", "Vision"],
-        correctAnswer: "Iron Man",
       },
       {
         id: 8,
@@ -68,9 +68,8 @@ export const marvelQuestions: QuestionsPack = {
       },
       {
         id: 10,
-        question:
-          "In what year was the movie Avengers: Age of Ultron released?",
-        image: "mcu_title_age_of_ultron.jpg", // official title card / poster
+        question: "In what year was this Avengers movie released?",
+        image: "/quiz/marvel/casual-q10.png",
         answers: ["2012", "2015", "2019", "2016"],
         correctAnswer: "2015",
       },
@@ -116,13 +115,20 @@ export const marvelQuestions: QuestionsPack = {
       },
       {
         id: 5,
+        question: "Which character is shown in the image?",
+        image: "/quiz/marvel/moderate-q5.png",
+        answers: ["Scarlet Witch", "Captain Marvel", "Black Widow", "Shuri"],
+        correctAnswer: "Scarlet Witch",
+      },
+      {
+        id: 6,
         question:
           "Which Marvel TV series focuses on multiple versions of the same character?",
         answers: ["Loki", "Daredevil", "Jessica Jones", "Hawkeye"],
         correctAnswer: "Loki",
       },
       {
-        id: 6,
+        id: 7,
         question: "What is the name of Wanda Maximoff's magical alter ego?",
         answers: [
           "Scarlet Witch",
@@ -130,13 +136,6 @@ export const marvelQuestions: QuestionsPack = {
           "Hex Maiden",
           "Chaos Witch",
         ],
-        correctAnswer: "Scarlet Witch",
-      },
-      {
-        id: 7,
-        question: "Which character is shown in the image?",
-        image: "mcu_character_wanda.jpg", // Wanda using magic
-        answers: ["Scarlet Witch", "Captain Marvel", "Black Widow", "Shuri"],
         correctAnswer: "Scarlet Witch",
       },
       {
@@ -155,7 +154,7 @@ export const marvelQuestions: QuestionsPack = {
       {
         id: 10,
         question: "Which location is shown in the image?",
-        image: "mcu_location_wakanda.jpg", // Wakanda city / landscape
+        image: "/quiz/marvel/moderate-q10.png",
         answers: ["Wakanda", "Talokan", "Asgard", "Sokovia"],
         correctAnswer: "Wakanda",
       },
@@ -219,6 +218,18 @@ export const marvelQuestions: QuestionsPack = {
       },
       {
         id: 6,
+        question: "Which location is shown in the image?",
+        image: "/quiz/marvel/pro-q6.png",
+        answers: [
+          "The Citadel at the End of Time",
+          "The TVA Headquarters",
+          "Chronopolis",
+          "The Quantum Realm",
+        ],
+        correctAnswer: "The Citadel at the End of Time",
+      },
+      {
+        id: 7,
         question:
           "In Marvel comics, what is the name of the process that gives mutants their powers?",
         answers: [
@@ -228,18 +239,6 @@ export const marvelQuestions: QuestionsPack = {
           "Evolution event",
         ],
         correctAnswer: "X-Gene activation",
-      },
-      {
-        id: 7,
-        question: "Which location is shown in the image?",
-        image: "mcu_location_citadel_at_the_end_of_time.jpg", // Loki finale location
-        answers: [
-          "The Citadel at the End of Time",
-          "The TVA Headquarters",
-          "Chronopolis",
-          "The Quantum Realm",
-        ],
-        correctAnswer: "The Citadel at the End of Time",
       },
       {
         id: 8,
@@ -252,7 +251,7 @@ export const marvelQuestions: QuestionsPack = {
         id: 9,
         question:
           "Which Infinity Stone is missing from the object shown in the image?",
-        image: "mcu_object_infinity_gauntlet_missing_stone.jpg", // Gauntlet with one slot empty
+        image: "/quiz/marvel/pro-q9.png",
         answers: ["Mind Stone", "Time Stone", "Reality Stone", "Space Stone"],
         correctAnswer: "Mind Stone",
       },
