@@ -47,7 +47,7 @@ export const moviesTvQuestions: QuestionsPack = {
       {
         id: 5,
         question: "Which movie is shown in the image?",
-        image: "movie_jurassic_park.jpg", // T-Rex rain scene / logo
+        image: "/quiz/moviesTV/casual-q5.png",
         answers: ["Jurassic Park", "King Kong", "Godzilla", "Jaws"],
         correctAnswer: "Jurassic Park",
       },
@@ -77,7 +77,7 @@ export const moviesTvQuestions: QuestionsPack = {
       {
         id: 9,
         question: "Which actor is shown in the image?",
-        image: "actor_tom_hanks.jpg",
+        image: "/quiz/moviesTV/casual-q9.png",
         answers: ["Tom Hanks", "Robin Williams", "Bill Murray", "Steve Carell"],
         correctAnswer: "Tom Hanks",
       },
@@ -121,7 +121,7 @@ export const moviesTvQuestions: QuestionsPack = {
       {
         id: 4,
         question: "Which movie is shown in the image?",
-        image: "movie_pulp_fiction.jpg", // Vincent & Jules / poster
+        image: "/quiz/moviesTV/moderate-q4.png",
         answers: ["Pulp Fiction", "Reservoir Dogs", "Goodfellas", "Heat"],
         correctAnswer: "Pulp Fiction",
       },
@@ -162,7 +162,7 @@ export const moviesTvQuestions: QuestionsPack = {
       {
         id: 9,
         question: "Which TV series is shown in the image?",
-        image: "tv_series_stranger_things.jpg", // kids + bikes / logo
+        image: "/quiz/moviesTV/moderate-q9.png",
         answers: [
           "Stranger Things",
           "Dark",
@@ -206,14 +206,8 @@ export const moviesTvQuestions: QuestionsPack = {
       },
       {
         id: 3,
-        question: `Which TV series popularized the phrase "Winter is Coming"?`,
-        answers: ["Game of Thrones", "The Witcher", "Vikings", "Rome"],
-        correctAnswer: "Game of Thrones",
-      },
-      {
-        id: 4,
         question: "Which film is shown in the image?",
-        image: "movie_blade_runner.jpg", // neon city / Deckard
+        image: "/quiz/moviesTV/pro-q3.png",
         answers: [
           "Blade Runner",
           "Akira",
@@ -221,6 +215,12 @@ export const moviesTvQuestions: QuestionsPack = {
           "Minority Report",
         ],
         correctAnswer: "Blade Runner",
+      },
+      {
+        id: 4,
+        question: `Which TV series popularized the phrase "Winter is Coming"?`,
+        answers: ["Game of Thrones", "The Witcher", "Vikings", "Rome"],
+        correctAnswer: "Game of Thrones",
       },
       {
         id: 5,
@@ -254,7 +254,7 @@ export const moviesTvQuestions: QuestionsPack = {
       {
         id: 8,
         question: "Which director is shown in the image?",
-        image: "director_stanley_kubrick.jpg",
+        image: "/quiz/moviesTV/pro-q8.png",
         answers: [
           "Stanley Kubrick",
           "Alfred Hitchcock",
