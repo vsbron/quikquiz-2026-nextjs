@@ -20,7 +20,7 @@ export const logicFactsQuestions: QuestionsPack = {
       {
         id: 3,
         question: "Which shape is shown in the image?",
-        image: "shape_triangle.jpg",
+        image: "/quiz/logicFacts/casual-q3.png",
         answers: ["Triangle", "Square", "Circle", "Pentagon"],
         correctAnswer: "Triangle",
       },
@@ -38,12 +38,19 @@ export const logicFactsQuestions: QuestionsPack = {
       },
       {
         id: 6,
+        question: "Which clock is shown in the image?",
+        image: "/quiz/logicFacts/casual-q6.png",
+        answers: ["3:00", "6:00", "9:00", "12:00"],
+        correctAnswer: "3:00",
+      },
+      {
+        id: 7,
         question: "What is half of 100?",
         answers: ["50", "40", "60", "25"],
         correctAnswer: "50",
       },
       {
-        id: 7,
+        id: 8,
         question: "Which is heavier?",
         answers: [
           "1kg of iron",
@@ -52,13 +59,6 @@ export const logicFactsQuestions: QuestionsPack = {
           "Depends",
         ],
         correctAnswer: "They are equal",
-      },
-      {
-        id: 8,
-        question: "Which clock is shown in the image?",
-        image: "analog_clock_3pm.jpg",
-        answers: ["3:00", "6:00", "9:00", "12:00"],
-        correctAnswer: "3:00",
       },
       {
         id: 9,
@@ -97,7 +97,7 @@ export const logicFactsQuestions: QuestionsPack = {
       {
         id: 4,
         question: "Which pattern is shown in the image?",
-        image: "pattern_alternating_shapes.jpg",
+        image: "/quiz/logicFacts/moderate-q4.png",
         answers: ["Alternating", "Random", "Spiral", "Symmetrical"],
         correctAnswer: "Alternating",
       },
@@ -127,7 +127,7 @@ export const logicFactsQuestions: QuestionsPack = {
       {
         id: 8,
         question: "Which diagram is shown in the image?",
-        image: "logic_venn_diagram.jpg",
+        image: "/quiz/logicFacts/moderate-q8.png",
         answers: ["Venn diagram", "Flowchart", "Bar chart", "Tree diagram"],
         correctAnswer: "Venn diagram",
       },
@@ -168,7 +168,7 @@ export const logicFactsQuestions: QuestionsPack = {
       {
         id: 3,
         question: "Which logic grid is shown in the image?",
-        image: "logic_grid_puzzle.jpg",
+        image: "/quiz/logicFacts/pro-q3.png",
         answers: ["Logic grid", "Sudoku", "Crossword", "Matrix"],
         correctAnswer: "Logic grid",
       },
@@ -199,7 +199,7 @@ export const logicFactsQuestions: QuestionsPack = {
       {
         id: 7,
         question: "Which pattern is shown in the image?",
-        image: "pattern_number_triangle.jpg",
+        image: "/quiz/logicFacts/pro-q7.png",
         answers: ["Triangular numbers", "Fibonacci", "Prime numbers", "Random"],
         correctAnswer: "Triangular numbers",
       },
