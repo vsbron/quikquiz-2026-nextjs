@@ -44,7 +44,7 @@ export const scienceQuestions: QuestionsPack = {
       {
         id: 7,
         question: "Which object is shown in the image?",
-        image: "science_object_dna_helix.jpg", // double helix
+        image: "/quiz/science/casual-q7.png",
         answers: ["DNA", "Protein", "Cell membrane", "Chromosome"],
         correctAnswer: "DNA",
       },
@@ -63,7 +63,7 @@ export const scienceQuestions: QuestionsPack = {
       {
         id: 10,
         question: "Which tool is shown in the image?",
-        image: "science_tool_microscope.jpg", // standard lab microscope
+        image: "/quiz/science/casual-q10.png",
         answers: ["Microscope", "Telescope", "Periscope", "Endoscope"],
         correctAnswer: "Microscope",
       },
@@ -113,7 +113,7 @@ export const scienceQuestions: QuestionsPack = {
       {
         id: 5,
         question: "Which scientist is shown in the image?",
-        image: "science_scientist_newton.jpg", // Isaac Newton portrait
+        image: "/quiz/science/moderate-q5.png",
         answers: [
           "Isaac Newton",
           "Albert Einstein",
@@ -148,7 +148,7 @@ export const scienceQuestions: QuestionsPack = {
       {
         id: 9,
         question: "Which diagram is shown in the image?",
-        image: "science_diagram_water_cycle.jpg", // evaporation/condensation diagram
+        image: "/quiz/science/moderate-q9.png",
         answers: [
           "Water cycle",
           "Carbon cycle",
@@ -190,6 +190,18 @@ export const scienceQuestions: QuestionsPack = {
       },
       {
         id: 3,
+        question: "Which phenomenon is shown in the image?",
+        image: "/quiz/science/pro-q3.png",
+        answers: [
+          "Wave-particle duality",
+          "Quantum entanglement",
+          "Photoelectric effect",
+          "Relativity",
+        ],
+        correctAnswer: "Wave-particle duality",
+      },
+      {
+        id: 4,
         question: "What does the pH scale measure?",
         answers: [
           "Acidity and alkalinity",
@@ -200,7 +212,7 @@ export const scienceQuestions: QuestionsPack = {
         correctAnswer: "Acidity and alkalinity",
       },
       {
-        id: 4,
+        id: 5,
         question: "Which scientist proposed the theory of natural selection?",
         answers: [
           "Charles Darwin",
@@ -209,18 +221,6 @@ export const scienceQuestions: QuestionsPack = {
           "James Watson",
         ],
         correctAnswer: "Charles Darwin",
-      },
-      {
-        id: 5,
-        question: "Which phenomenon is shown in the image?",
-        image: "science_phenomenon_double_slit.jpg", // wave interference pattern
-        answers: [
-          "Wave-particle duality",
-          "Quantum entanglement",
-          "Photoelectric effect",
-          "Relativity",
-        ],
-        correctAnswer: "Wave-particle duality",
       },
       {
         id: 6,
@@ -241,6 +241,13 @@ export const scienceQuestions: QuestionsPack = {
       },
       {
         id: 8,
+        question: "Which structure is shown in the image?",
+        image: "/quiz/science/pro-q8.png",
+        answers: ["Cell membrane", "Cell wall", "Nucleus", "Mitochondria"],
+        correctAnswer: "Cell membrane",
+      },
+      {
+        id: 9,
         question: "Which scale is used to measure earthquake magnitude?",
         answers: [
           "Richter scale",
@@ -249,13 +256,6 @@ export const scienceQuestions: QuestionsPack = {
           "Kelvin scale",
         ],
         correctAnswer: "Richter scale",
-      },
-      {
-        id: 9,
-        question: "Which structure is shown in the image?",
-        image: "science_structure_cell_membrane.jpg", // membrane diagram
-        answers: ["Cell membrane", "Cell wall", "Nucleus", "Mitochondria"],
-        correctAnswer: "Cell membrane",
       },
       {
         id: 10,
