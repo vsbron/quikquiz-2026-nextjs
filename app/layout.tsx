@@ -23,7 +23,7 @@ const inter = Inter({
 
 // Meta data
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vsbron-quikquiz-2026.vercel.app/"),
+  metadataBase: new URL(`${process.env.NEXT_PUBLIC_DOMAIN}`),
   title: {
     default: `${APP_NAME} - Test your knowledge!`,
     template: `%s | ${APP_NAME}`,
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
     ],
     apple: [{ url: "/apple-touch-icon.png" }],
   },
-    openGraph: {
+  openGraph: {
     type: "website",
-    url: "https://vsbron-quikquiz-2026.vercel.app/",
+    url: process.env.NEXT_PUBLIC_DOMAIN,
     title: `${APP_NAME} - Test your knowledge!`,
     description:
       "Challenge yourself with fun quizzes across multiple categories. Answer questions, track your score, and see results instantly.",
