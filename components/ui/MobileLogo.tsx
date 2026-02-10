@@ -9,7 +9,7 @@ function MobileLogo() {
       href={LINKS.HOME}
       className="flex items-center font-merriweather font-bold gap-2 text-[18px]"
     >
-      <Image src="/logo.svg" width={60} height={33} alt={`${APP_NAME} Logo`} />{" "}
+      <Image src="/logo.svg" width={60} height={32} alt={`${APP_NAME} Logo`} />{" "}
       QuickQuiz
     </Link>
   );

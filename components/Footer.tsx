@@ -27,7 +27,7 @@ function Footer() {
           <Image
             src="/logo.svg"
             width={45}
-            height={25}
+            height={24}
             alt={`${APP_NAME} Logo`}
           />
         </div>

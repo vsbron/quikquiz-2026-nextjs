@@ -13,7 +13,7 @@ function LogoTab() {
         className="text-xl flex items-center gap-2 leading-0"
         href={LINKS.HOME}
       >
-        <Image src="/logo.svg" width={75} height={41} alt={`${APP_NAME} Logo`} />
+        <Image src="/logo.svg" width={75} height={39} alt={`${APP_NAME} Logo`} />
       </Link>
     </Tab>
   );
