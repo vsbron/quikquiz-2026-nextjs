@@ -8,7 +8,7 @@ import { APP_NAME } from "@/utils/constants";
 function HeroSection() {
   // Returned JSX
   return (
-    <section className="text-section flex flex-col gap-1 sm:my-8">
+    <section className="text-section flex flex-col gap-1 sm:mt-10 sm:mb-8">
       <div className="flex-center gap-5 mb-2 sm:mb-8">
         <div className="max-sm:hidden sm:w-30 sm:h-16.25 md:w-43.75 md:h-23.75 relative">
           <Image
