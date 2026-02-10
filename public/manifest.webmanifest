@@ -1,0 +1,26 @@
+{
+  "name": "QuikQuiz - Test your knowledge!",
+  "short_name": "QuikQuiz",
+  "description": "Challenge yourself with fun quizzes across multiple categories. Answer questions, track your score, and see results instantly.",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#6b4117",
+  "background_color": "#fff7ed",
+  "display": "standalone"
+}
