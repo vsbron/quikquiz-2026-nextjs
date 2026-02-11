@@ -25,7 +25,7 @@ export const technologyQuestions: QuestionsPack = {
       {
         id: 3,
         question: "Which device is shown in the image?",
-        image: "tech_device_smartphone.jpg",
+        image: "/quiz/technology/casual-q3.png",
         answers: ["Smartphone", "Tablet", "Smartwatch", "Laptop"],
         correctAnswer: "Smartphone",
       },
@@ -60,7 +60,7 @@ export const technologyQuestions: QuestionsPack = {
       {
         id: 7,
         question: "Which symbol is shown in the image?",
-        image: "tech_logo_bluetooth.jpg",
+        image: "/quiz/technology/casual-q7.png",
         answers: ["Bluetooth", "Wi-Fi", "NFC", "USB"],
         correctAnswer: "Bluetooth",
       },
@@ -117,7 +117,7 @@ export const technologyQuestions: QuestionsPack = {
       {
         id: 4,
         question: "Which device component is shown in the image?",
-        image: "tech_component_cpu.jpg",
+        image: "/quiz/technology/moderate-q4.png",
         answers: ["CPU", "GPU", "RAM", "SSD"],
         correctAnswer: "CPU",
       },
@@ -158,7 +158,7 @@ export const technologyQuestions: QuestionsPack = {
       {
         id: 9,
         question: "Which logo is shown in the image?",
-        image: "tech_logo_github.jpg",
+        image: "/quiz/technology/moderate-q9.png",
         answers: ["GitHub", "GitLab", "Bitbucket", "SourceForge"],
         correctAnswer: "GitHub",
       },
@@ -179,21 +179,8 @@ export const technologyQuestions: QuestionsPack = {
       },
       {
         id: 2,
-        question:
-          "Which computing concept allows multiple virtual machines on one physical machine?",
-        answers: ["Virtualization", "Multithreading", "Clustering", "Caching"],
-        correctAnswer: "Virtualization",
-      },
-      {
-        id: 3,
-        question: "Which protocol secures web traffic using encryption?",
-        answers: ["HTTPS", "FTP", "HTTP", "SMTP"],
-        correctAnswer: "HTTPS",
-      },
-      {
-        id: 4,
         question: "Which technology diagram is shown in the image?",
-        image: "tech_diagram_client_server.jpg",
+        image: "/quiz/technology/pro-q2.png",
         answers: [
           "Client-server model",
           "Peer-to-peer network",
@@ -203,6 +190,19 @@ export const technologyQuestions: QuestionsPack = {
         correctAnswer: "Client-server model",
       },
       {
+        id: 3,
+        question:
+          "Which computing concept allows multiple virtual machines on one physical machine?",
+        answers: ["Virtualization", "Multithreading", "Clustering", "Caching"],
+        correctAnswer: "Virtualization",
+      },
+      {
+        id: 4,
+        question: "Which protocol secures web traffic using encryption?",
+        answers: ["HTTPS", "FTP", "HTTP", "SMTP"],
+        correctAnswer: "HTTPS",
+      },
+      {
         id: 5,
         question: "Which company created the first commercial microprocessor?",
         answers: ["Intel", "IBM", "AMD", "Motorola"],
@@ -210,6 +210,13 @@ export const technologyQuestions: QuestionsPack = {
       },
       {
         id: 6,
+        question: "Which symbol is shown in the image?",
+        image: "/quiz/technology/pro-q6.png",
+        answers: ["Docker", "Kubernetes", "Linux", "Git"],
+        correctAnswer: "Docker",
+      },
+      {
+        id: 7,
         question: "What is the primary role of a GPU?",
         answers: [
           "Render graphics",
@@ -220,7 +227,7 @@ export const technologyQuestions: QuestionsPack = {
         correctAnswer: "Render graphics",
       },
       {
-        id: 7,
+        id: 8,
         question: "Which programming paradigm emphasizes immutability?",
         answers: [
           "Functional programming",
@@ -229,13 +236,6 @@ export const technologyQuestions: QuestionsPack = {
           "Imperative",
         ],
         correctAnswer: "Functional programming",
-      },
-      {
-        id: 8,
-        question: "Which symbol is shown in the image?",
-        image: "tech_logo_docker.jpg",
-        answers: ["Docker", "Kubernetes", "Linux", "Git"],
-        correctAnswer: "Docker",
       },
       {
         id: 9,
