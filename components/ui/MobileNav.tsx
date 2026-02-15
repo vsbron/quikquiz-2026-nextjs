@@ -26,25 +26,28 @@ function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
       </h4>
       <ul className="flex flex-col gap-3 pl-0! text-xl mt-4!">
         {nav.map(({ url, label, icon: Icon }) => (
-          <Link
-            key={url}
-            href={url}
+          <li key={url}>
+            <Link
+              href={url}
+              onClick={() => setIsMenuOpen(false)}
+              className="flex items-center gap-2 hover:gap-4 transition-all"
+            >
+              <Icon className="w-5 h-5" />
+              {label}
+            </Link>
+          </li>
+        ))}
+        <li>
+          <a
+            href="https://github.com/vsbron/quikquiz-2026-nextjs"
             onClick={() => setIsMenuOpen(false)}
+            target="_blank"
             className="flex items-center gap-2 hover:gap-4 transition-all"
           >
-            <Icon className="w-5 h-5" />
-            {label}
-          </Link>
-        ))}
-        <a
-          href="https://github.com/vsbron/quikquiz-2026-nextjs"
-          onClick={() => setIsMenuOpen(false)}
-          target="_blank"
-          className="flex items-center gap-2 hover:gap-4 transition-all"
-        >
-          <CodeBracketSquareIcon className="w-5 h-5" />
-          Repo
-        </a>
+            <CodeBracketSquareIcon className="w-5 h-5" />
+            Repo
+          </a>
+        </li>
       </ul>
     </div>
   );
