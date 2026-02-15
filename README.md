@@ -169,6 +169,7 @@ Returns:
 - **API Layer**: Next.js Route Handlers
 - **State**: client-side state + `sessionStorage`
 - **SEO + social sharing metadata**: page titles/descriptions, canonical URLs, Open Graph, Twitter cards
+- **Lighthouse scores**: 95+ across all categories (Performance, Accessibility, Best Practices, SEO)
 - **Responsiveness**: optimized down to 360px
 - **Deployment**: Vercel
 
