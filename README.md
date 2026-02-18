@@ -30,7 +30,7 @@ The project includes dynamic routing, API-driven quiz loading, server-side resul
 
 ---
 
-## Project Core principles
+## Project Core Principles
 
 - Simple, distraction-free UI
 - Clear quiz flow from category → difficulty → quiz → results
@@ -167,6 +167,7 @@ Returns:
 - **Charts**: Chart.js
 - **Data Source**: static quiz packs (no database)
 - **API Layer**: Next.js Route Handlers
+- **Server-side result calculation** with payload checks (category, difficulty, answers length)
 - **State**: client-side state + `sessionStorage`
 - **SEO + social sharing metadata**: page titles/descriptions, canonical URLs, Open Graph, Twitter cards
 - **Lighthouse scores**: 95+ across all categories (Performance, Accessibility, Best Practices, SEO)

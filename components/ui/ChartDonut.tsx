@@ -80,7 +80,7 @@ function ChartDonut({ correct, wrong }: ChartDonutProps) {
 
   // Returned JSX
   return (
-    <div className="grig gap-4 max-w-72 mx-auto">
+    <div className="grid gap-4 max-w-72 mx-auto">
       <div className="relative h-64">
         <Doughnut data={data} options={options} />
         <div className="absolute inset-0 grid items-center justify-center pointer-events-none text-center">
@@ -92,7 +92,7 @@ function ChartDonut({ correct, wrong }: ChartDonutProps) {
           </div>
         </div>
       </div>
-      <div className="flex justify-between text-center mt-3">
+      <div className="flex justify-between text-center">
         <div className="min-w-15">
           <div className="text-[16px] opacity-75">Correct</div>
           <div className="text-[20px] font-bold">{correct}</div>
